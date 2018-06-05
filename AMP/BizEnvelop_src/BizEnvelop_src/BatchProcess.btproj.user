@@ -1,0 +1,62 @@
+﻿<VisualStudioProject>
+    <BIZTALK>
+        <Build>
+            <Settings>
+                <EditorCommon/>
+                <ProjectCommon ReferencesPath = "" />
+                <Config
+                    Name = "Development"
+                    Register = "True"
+                    Redeploy = "False"
+                    ConfigurationDatabase = "BizTalkMgmtDb"
+                    Server = "PCIIIBO6759"
+                />
+                <Config
+                    Name = "Deployment"
+                    Register = "True"
+                    Redeploy = "False"
+                    ConfigurationDatabase = "BizTalkMgmtDb"
+                    Server = "PCIIIBO6759"
+                />
+            </Settings>
+        </Build>
+        <OtherProjectSettings
+            CopyProjectDestinationFolder = ""
+            CopyProjectUncPath = ""
+            CopyProjectOption = "0"
+            ProjectView = "ProjectFiles"
+            ProjectTrust = "0"
+        />
+        <Files>
+            <File
+                RelPath = "CustomerDocument.xsd"
+                TestMapTargetType = "0"
+                ValidateTestMapOutput = "True"
+                TestMapInputInstanceFilename = ""
+                ValidateTestMapInput = "True"
+                TestMapSourceType = "0"
+                PropertySchemaFileName = "PropertySchema.xsd"
+                EditorOutputInstanceFilename = "D:\batch.xml"
+                EditorInputInstanceFilename = ""
+                ValidateInstanceInputType = "0"
+                AutoRefreshSchema = "0"
+                GenerateInstanceOutputType = "0"
+            />
+            <File
+                RelPath = "CustomerEnvelope.xsd"
+                TestMapTargetType = "0"
+                ValidateTestMapOutput = "True"
+                TestMapInputInstanceFilename = ""
+                ValidateTestMapInput = "True"
+                TestMapSourceType = "0"
+                PropertySchemaFileName = "PropertySchema.xsd"
+                EditorOutputInstanceFilename = "D:\biztalk Orc\BatchProcess\batch.xml"
+                EditorInputInstanceFilename = "D:\biztalk Orc\BatchProcess\batch.xml"
+                ValidateInstanceInputType = "0"
+                AutoRefreshSchema = "0"
+                GenerateInstanceOutputType = "0"
+            />
+        </Files>
+    </BIZTALK>
+</VisualStudioProject>
+

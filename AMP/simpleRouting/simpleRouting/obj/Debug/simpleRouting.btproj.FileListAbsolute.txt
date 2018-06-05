@@ -1,0 +1,4 @@
+C:\AMP\simpleRouting\simpleRouting\bin\Debug\simpleRouting.dll
+C:\AMP\simpleRouting\simpleRouting\bin\Debug\simpleRouting.pdb
+C:\AMP\simpleRouting\simpleRouting\obj\Debug\simpleRouting.dll
+C:\AMP\simpleRouting\simpleRouting\obj\Debug\simpleRouting.pdb

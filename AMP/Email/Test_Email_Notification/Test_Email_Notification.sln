@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_Email_Notification", "Test_Email_Notification\Test_Email_Notification.btproj", "{24CAE4EA-BE73-4942-82B6-565B24FF7016}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Try_email", "..\try_email\Try_email\Try_email.btproj", "{1811FF42-188D-4EFB-9FC1-0FC731B27B3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24CAE4EA-BE73-4942-82B6-565B24FF7016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24CAE4EA-BE73-4942-82B6-565B24FF7016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24CAE4EA-BE73-4942-82B6-565B24FF7016}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{24CAE4EA-BE73-4942-82B6-565B24FF7016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24CAE4EA-BE73-4942-82B6-565B24FF7016}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24CAE4EA-BE73-4942-82B6-565B24FF7016}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1811FF42-188D-4EFB-9FC1-0FC731B27B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1811FF42-188D-4EFB-9FC1-0FC731B27B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1811FF42-188D-4EFB-9FC1-0FC731B27B3B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1811FF42-188D-4EFB-9FC1-0FC731B27B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1811FF42-188D-4EFB-9FC1-0FC731B27B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1811FF42-188D-4EFB-9FC1-0FC731B27B3B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

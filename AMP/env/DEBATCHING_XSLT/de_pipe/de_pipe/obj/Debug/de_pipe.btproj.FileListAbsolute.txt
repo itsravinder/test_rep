@@ -1,0 +1,4 @@
+C:\AMP\env\DEBATCHING_XSLT\de_pipe\de_pipe\bin\Debug\de_pipe.dll
+C:\AMP\env\DEBATCHING_XSLT\de_pipe\de_pipe\bin\Debug\de_pipe.pdb
+C:\AMP\env\DEBATCHING_XSLT\de_pipe\de_pipe\obj\Debug\de_pipe.dll
+C:\AMP\env\DEBATCHING_XSLT\de_pipe\de_pipe\obj\Debug\de_pipe.pdb

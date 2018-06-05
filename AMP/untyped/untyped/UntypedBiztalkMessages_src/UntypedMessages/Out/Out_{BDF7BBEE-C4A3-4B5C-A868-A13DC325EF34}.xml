@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ns0:StoreFront xmlns:ns0="http://UntypedMessages.StoreFront">
+  <RegID>123213</RegID>
+  <Category>MUSIC</Category>
+  <ExpectedPrice>$9.99</ExpectedPrice>
+  <DataItem1>18 Till I Die</DataItem1>
+  <DataItem2>Bryam Adams</DataItem2>
+  <Operation>SELL</Operation>
+</ns0:StoreFront>

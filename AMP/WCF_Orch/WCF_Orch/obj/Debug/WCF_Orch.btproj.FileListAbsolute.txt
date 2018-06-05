@@ -1,0 +1,4 @@
+C:\AMP\WCF_Orch\WCF_Orch\bin\Debug\WCF_Orch.dll
+C:\AMP\WCF_Orch\WCF_Orch\bin\Debug\WCF_Orch.pdb
+C:\AMP\WCF_Orch\WCF_Orch\obj\Debug\WCF_Orch.dll
+C:\AMP\WCF_Orch\WCF_Orch\obj\Debug\WCF_Orch.pdb

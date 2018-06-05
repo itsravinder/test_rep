@@ -1,0 +1,22 @@
+<VisualStudioProject>
+  <CSHARP ProjectType="local" ProductVersion="3.0.4902" SchemaVersion="1.0" ProjectGuid="{405760B3-A598-4AC2-B821-5BA18565C304}">
+    <Build>
+      <Settings AssemblyName="BatchProcess" OutputType="library" RootNamespace="BatchProcess" AssemblyOriginatorKeyFile="D:\biztalk Orc\Tutorial.snk" DelaySign="False">
+        <Config Name="Development" DefineConstants="DEBUG;TRACE" TreatWarningsAsErrors="False" WarningLevel="4" OutputPath="bin\Development\" />
+        <Config Name="Deployment" DefineConstants="TRACE" TreatWarningsAsErrors="False" WarningLevel="4" OutputPath="bin\Deployment\" />
+      </Settings>
+      <References>
+        <Reference Name="System" AssemblyName="System" />
+        <Reference Name="System.XML" AssemblyName="System.Xml" />
+        <Reference Name="Microsoft.BizTalk.DefaultPipelines" AssemblyName="Microsoft.BizTalk.DefaultPipelines" />
+        <Reference Name="Microsoft.BizTalk.GlobalPropertySchemas" AssemblyName="Microsoft.BizTalk.GlobalPropertySchemas" />
+        <Reference Name="Microsoft.BizTalk.Pipeline.Components" AssemblyName="Microsoft.BizTalk.Pipeline.Components" HintPath="..\..\Program Files\Microsoft BizTalk Server 2004\Pipeline Components\Microsoft.BizTalk.Pipeline.Components.dll" />
+      </References>
+    </Build>
+    <Files>
+      <Include>
+        <File RelPath="Properties\AssemblyInfo.cs" BuildAction="Compile" />
+      </Include>
+    </Files>
+  </CSHARP>
+</VisualStudioProject>

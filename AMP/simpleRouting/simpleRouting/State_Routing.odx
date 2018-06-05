@@ -1,0 +1,637 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="020b60f5-e7e0-41c8-bb3d-b909572394ec" LowerBound="1.1" HigherBound="186.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="simpleRouting" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="ee9e8f86-e703-4e6e-aeb2-3bcb229437e6" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Incoming_Msg" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="93592a62-84d4-432e-8c1a-635743304a00" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="93baa19b-28fc-444c-b96b-01b407ec9165" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.27">
+                    <om:Property Name="Ref" Value="simpleRouting.Incoming_order" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="f97b96f1-6031-4e11-890f-451b7a7fe0a1" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="26.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="6408440f-f6ff-4bd6-bf4b-9a44ab631240" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TN" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="42ca6f16-75ce-4af7-a3cd-5f54ecba6e18" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.27">
+                    <om:Property Name="Ref" Value="simpleRouting.Incoming_order" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="26691a62-1661-4442-94ee-557572c62b0d" ParentLink="PortType_OperationDeclaration" LowerBound="17.1" HigherBound="21.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="HYD" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="f2f1540e-6c1f-43be-b7bd-a6aac4c568b2" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="19.13" HigherBound="19.16">
+                    <om:Property Name="Ref" Value="simpleRouting.tem" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="4393c303-dc9c-4750-a3d9-50b8d57acc29" ParentLink="PortType_OperationDeclaration" LowerBound="21.1" HigherBound="25.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="other" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="d809445c-00aa-4538-8690-e89e8f0ec4a7" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="23.13" HigherBound="23.16">
+                    <om:Property Name="Ref" Value="simpleRouting.tem" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="790ab0d6-bb08-46e3-99ca-cb1344dbffb8" ParentLink="Module_PortType" LowerBound="26.1" HigherBound="33.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="8712396c-f29a-43a9-8d5b-0611814e6a7f" ParentLink="PortType_OperationDeclaration" LowerBound="28.1" HigherBound="32.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="d08f2930-8634-4395-a44c-05a3b3f7ef67" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="30.13" HigherBound="30.16">
+                    <om:Property Name="Ref" Value="simpleRouting.tem" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="81bd025f-ef13-491a-a37b-bc1ad132f753" ParentLink="Module_PortType" LowerBound="33.1" HigherBound="40.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="TN_Rcv" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="f525f78f-ca66-40e4-8522-71022e550d57" ParentLink="PortType_OperationDeclaration" LowerBound="35.1" HigherBound="39.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="71059019-3aed-4765-8b52-fb8b45038fba" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="37.13" HigherBound="37.16">
+                    <om:Property Name="Ref" Value="simpleRouting.tem" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="62d17ec3-7959-4c81-97dc-1acd8d290c61" ParentLink="Module_PortType" LowerBound="40.1" HigherBound="47.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="HYD_Send" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="dbf254ad-7d4e-4e04-9d6f-a317641ad933" ParentLink="PortType_OperationDeclaration" LowerBound="42.1" HigherBound="46.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="258da52f-9283-4744-b5ba-77346cdcef13" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="44.13" HigherBound="44.16">
+                    <om:Property Name="Ref" Value="simpleRouting.tem" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="12be1546-f164-4d7e-a1c7-ffc63b4d925c" ParentLink="Module_PortType" LowerBound="47.1" HigherBound="54.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Others_Send" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="df0d64d5-87fd-4024-ac11-30cb28153dff" ParentLink="PortType_OperationDeclaration" LowerBound="49.1" HigherBound="53.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="9081b55a-be87-41f3-b7be-389d7314c455" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="51.13" HigherBound="51.16">
+                    <om:Property Name="Ref" Value="simpleRouting.tem" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="7508e096-1426-44fa-bc28-6040cc40bcdc" ParentLink="Module_ServiceDeclaration" LowerBound="54.1" HigherBound="185.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="State_Routing" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="8a5fbdf0-b865-4cac-bcc4-8a57540bf315" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="69.1" HigherBound="70.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="State" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="8caada95-2b27-46c3-9021-385985305a9f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="70.1" HigherBound="71.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int64" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmldocument1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="50d64241-d024-462f-9af2-fd0ce790af2b" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="71.1" HigherBound="72.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int64" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmldocument2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="33678145-78de-40a4-b2d9-21eab32ded97" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="72.1" HigherBound="73.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int64" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="result" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="09f07fb9-7a98-41d9-a158-a93b8bb8e394" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="73.1" HigherBound="74.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Out" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="143ee27c-d3b0-437a-b3d0-6dc6e28f77c0" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="74.1" HigherBound="75.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="myxmlDoc" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="a2584578-a30c-4cdc-a3f6-9a24d2926dec" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="75.1" HigherBound="76.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Invoice_ID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="325584a2-1830-42ba-8a38-21b995296aaa" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="76.1" HigherBound="77.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Address" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="5010362d-5003-4cfa-99a9-82d5e1017e3a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="77.1" HigherBound="78.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="result_str" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f11e7f67-7148-48e6-b854-0f068a637147" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="65.1" HigherBound="66.1">
+                <om:Property Name="Type" Value="simpleRouting.Incoming_order" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="IN_Msg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="aa4f31a9-29dc-4128-af00-7461822cd0b6" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="66.1" HigherBound="67.1">
+                <om:Property Name="Type" Value="simpleRouting.tem" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Out_Msg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="34d2d86f-78ab-4f7f-b192-44b02baaf3f0" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="67.1" HigherBound="68.1">
+                <om:Property Name="Type" Value="simpleRouting.Incoming_order" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="State_name_msg1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f072ff23-abd7-4bbf-8efc-42c97ae4cd4d" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="68.1" HigherBound="69.1">
+                <om:Property Name="Type" Value="simpleRouting.Incoming_order" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="State_name_msg2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="b91fe8cb-aee5-4996-bcf5-c3a94ba2c37b" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="bd0a80ab-ae5b-4d2e-9db1-107c4b42b0eb" ParentLink="ServiceBody_Statement" LowerBound="80.1" HigherBound="88.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Port_1" />
+                    <om:Property Name="MessageName" Value="IN_Msg" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="7330b5dd-64b7-4e3f-99ee-05bd8723638f" ParentLink="ServiceBody_Statement" LowerBound="88.1" HigherBound="94.1">
+                    <om:Property Name="Expression" Value="State = xpath(IN_Msg,&quot;string(/*[local-name()='AllOrders' and namespace-uri()='http://simpleRouting.Incoming_order']/*[local-name()='Orders' and namespace-uri()='']/*[local-name()='State' and namespace-uri()=''])&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;xmldocument1 = System.Convert.ToInt64(xpath(IN_Msg,&quot;number/*[local-name()='AllOrders' and namespace-uri()='http://simpleRouting.Incoming_order']/*[local-name()='Orders' and namespace-uri()='']/*[local-name()='Number1' and namespace-uri()='']&quot;));&#xD;&#xA;xmldocument2 =  System.Convert.ToInt64(xpath(IN_Msg,&quot;number/*[local-name()='AllOrders' and namespace-uri()='http://simpleRouting.Incoming_order']/*[local-name()='Orders' and namespace-uri()='']/*[local-name()='Number2' and namespace-uri()='']&quot;));" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Expression_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Decision" OID="f727d639-cae3-4c46-abad-c44254dff86a" ParentLink="ServiceBody_Statement" LowerBound="94.1" HigherBound="183.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Decide_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="DecisionBranch" OID="74eb485f-3f18-417f-b57c-d958aa541d79" ParentLink="ReallyComplexStatement_Branch" LowerBound="95.13" HigherBound="123.1">
+                        <om:Property Name="Expression" Value="State == &quot;TN&quot;" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Rule_1" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Construct" OID="6f8bb4eb-2179-4403-b0eb-30348a115bc0" ParentLink="ComplexStatement_Statement" LowerBound="97.1" HigherBound="120.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructMessage_1" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="ed7c4481-a967-4ae9-a675-8f1d0e356a36" ParentLink="Construct_MessageRef" LowerBound="98.27" HigherBound="98.34">
+                                <om:Property Name="Ref" Value="Out_Msg" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="7da18f4b-945e-48a9-adcf-1f3d5bd08d92" ParentLink="ComplexStatement_Statement" LowerBound="100.1" HigherBound="119.1">
+                                <om:Property Name="Expression" Value="&#xD;&#xA;&#xD;&#xA;myxmlDoc = new System.Xml.XmlDocument();&#xD;&#xA;myxmlDoc=IN_Msg;&#xD;&#xA;&#xD;&#xA;Invoice_ID=IN_Msg.Orders.InvocieId;&#xD;&#xA;&#xD;&#xA;State = IN_Msg.Orders.State;&#xD;&#xA;&#xD;&#xA;Address = IN_Msg.Orders.Address;&#xD;&#xA;&#xD;&#xA;result = xmldocument1+xmldocument2;&#xD;&#xA;&#xD;&#xA;//result_str = System.Convert.ToString(result);&#xD;&#xA;&#xD;&#xA;myxmlDoc.LoadXml(&quot;&lt;ns0:Root xmlns:ns0='http://simpleRouting.tem'&gt;&lt;InvoiceID&gt;&quot;+Invoice_ID+&quot;&lt;/InvoiceID&gt; &lt;Address&gt;&quot;+Address+&quot;&lt;/Address&gt;  &lt;State&gt;&quot;+State+&quot;&lt;/State&gt;  &lt;Result&gt; result &lt;/Result&gt; &lt;/ns0:Root&gt;&quot;);&#xD;&#xA;&#xD;&#xA;Out_Msg = myxmlDoc;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="e5e8cf06-b6e9-4696-be55-d3e2cec4c480" ParentLink="ComplexStatement_Statement" LowerBound="120.1" HigherBound="122.1">
+                            <om:Property Name="PortName" Value="TN" />
+                            <om:Property Name="MessageName" Value="Out_Msg" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="5e3ca629-16c2-4612-9dc2-3bd44541e915" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Decision" OID="2c26e42e-5904-4602-a90f-f271d097adc1" ParentLink="ComplexStatement_Statement" LowerBound="125.1" HigherBound="182.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Decide_2" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="DecisionBranch" OID="247e66b1-f0e9-4599-a315-a6ecbd168b53" ParentLink="ReallyComplexStatement_Branch" LowerBound="126.17" HigherBound="154.1">
+                                <om:Property Name="Expression" Value="State == &quot;HYD&quot;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Rule_1" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Construct" OID="00762a35-b069-4c25-9a57-fd689c5f1fc5" ParentLink="ComplexStatement_Statement" LowerBound="128.1" HigherBound="151.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ConstructMessage_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="830b11e5-417e-4669-9974-17cf2368b772" ParentLink="Construct_MessageRef" LowerBound="129.31" HigherBound="129.38">
+                                        <om:Property Name="Ref" Value="Out_Msg" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessageAssignment" OID="e5b2d0f2-9f9a-453d-a1a8-fff0befaf8a4" ParentLink="ComplexStatement_Statement" LowerBound="131.1" HigherBound="150.1">
+                                        <om:Property Name="Expression" Value="&#xD;&#xA;&#xD;&#xA;myxmlDoc = new System.Xml.XmlDocument();&#xD;&#xA;myxmlDoc=IN_Msg;&#xD;&#xA;&#xD;&#xA;Invoice_ID=IN_Msg.Orders.InvocieId;&#xD;&#xA;&#xD;&#xA;State = IN_Msg.Orders.State;&#xD;&#xA;&#xD;&#xA;Address = IN_Msg.Orders.Address;&#xD;&#xA;&#xD;&#xA;result = xmldocument1+xmldocument2;&#xD;&#xA;&#xD;&#xA;//result_str = System.Convert.ToString(result);&#xD;&#xA;&#xD;&#xA;myxmlDoc.LoadXml(&quot;&lt;ns0:Root xmlns:ns0='http://simpleRouting.tem'&gt;&lt;InvoiceID&gt;&quot;+Invoice_ID+&quot;&lt;/InvoiceID&gt; &lt;Address&gt;&quot;+Address+&quot;&lt;/Address&gt;  &lt;State&gt;&quot;+State+&quot;&lt;/State&gt;  &lt;Result&gt;result&lt;/Result&gt; &lt;/ns0:Root&gt;&quot;);&#xD;&#xA;&#xD;&#xA;Out_Msg = myxmlDoc;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="MessageAssignment_1" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Send" OID="811b39bf-8eba-461c-a274-b9d5e18e5aec" ParentLink="ComplexStatement_Statement" LowerBound="151.1" HigherBound="153.1">
+                                    <om:Property Name="PortName" Value="HYD" />
+                                    <om:Property Name="MessageName" Value="Out_Msg" />
+                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Send_2" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="25acb555-d773-4730-849d-f422839ff1f3" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="Construct" OID="acda1a2e-7f74-42f3-ac78-7a3a352cffe3" ParentLink="ComplexStatement_Statement" LowerBound="156.1" HigherBound="179.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="ConstructMessage_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="f63eefe8-3322-4ebb-aa00-6aec3a755cc1" ParentLink="Construct_MessageRef" LowerBound="157.31" HigherBound="157.38">
+                                        <om:Property Name="Ref" Value="Out_Msg" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessageAssignment" OID="2af1217a-e726-4ffb-92c3-b925bd62c73a" ParentLink="ComplexStatement_Statement" LowerBound="159.1" HigherBound="178.1">
+                                        <om:Property Name="Expression" Value="&#xD;&#xA;&#xD;&#xA;myxmlDoc = new System.Xml.XmlDocument();&#xD;&#xA;myxmlDoc=IN_Msg;&#xD;&#xA;&#xD;&#xA;Invoice_ID=IN_Msg.Orders.InvocieId;&#xD;&#xA;&#xD;&#xA;State = IN_Msg.Orders.State;&#xD;&#xA;&#xD;&#xA;Address = IN_Msg.Orders.Address;&#xD;&#xA;&#xD;&#xA;result = xmldocument1+xmldocument2;&#xD;&#xA;&#xD;&#xA;//result_str = System.Convert.ToString(result);&#xD;&#xA;&#xD;&#xA;myxmlDoc.LoadXml(&quot;&lt;ns0:Root xmlns:ns0='http://simpleRouting.tem'&gt;&lt;InvoiceID&gt;&quot;+Invoice_ID+&quot;&lt;/InvoiceID&gt; &lt;Address&gt;&quot;+Address+&quot;&lt;/Address&gt;  &lt;State&gt;&quot;+State+&quot;&lt;/State&gt;  &lt;Result&gt;result&lt;/Result&gt; &lt;/ns0:Root&gt;&quot;);&#xD;&#xA;&#xD;&#xA;Out_Msg = myxmlDoc;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="MessageAssignment_1" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Send" OID="1ed4df07-25fd-4196-8a6b-786c5c72d5a4" ParentLink="ComplexStatement_Statement" LowerBound="179.1" HigherBound="181.1">
+                                    <om:Property Name="PortName" Value="OThers" />
+                                    <om:Property Name="MessageName" Value="Out_Msg" />
+                                    <om:Property Name="OperationName" Value="Operation_1" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Send_3" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="6f759b36-d04a-41b1-b225-a9238281bda2" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="57.1" HigherBound="59.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="simpleRouting.Incoming_Msg" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="a2bdd71d-97e6-4016-a32f-c39f9f01f3eb" ParentLink="PortDeclaration_CLRAttribute" LowerBound="57.1" HigherBound="58.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="01486761-986a-4018-83df-781bebf40e57" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="59.1" HigherBound="61.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="simpleRouting.TN_Rcv" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TN" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="777f176e-a5e0-416a-82cf-d08af65d891c" ParentLink="PortDeclaration_CLRAttribute" LowerBound="59.1" HigherBound="60.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="cd5b27d3-dc11-4830-a669-4a5c781cb1a4" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="61.1" HigherBound="63.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="simpleRouting.HYD_Send" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="HYD" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="059170f4-619c-48a6-81dd-0858e54a6f89" ParentLink="PortDeclaration_CLRAttribute" LowerBound="61.1" HigherBound="62.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="e488e129-38b5-4a87-84c4-7525171c2724" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="63.1" HigherBound="65.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="simpleRouting.Others_Send" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OThers" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="c142a8ca-99f8-4a0b-8910-80a11b3bffc9" ParentLink="PortDeclaration_CLRAttribute" LowerBound="63.1" HigherBound="64.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module simpleRouting
+{
+    internal porttype Incoming_Msg
+    {
+        oneway Operation_1
+        {
+            Incoming_order
+        };
+    };
+    internal porttype PortType_1
+    {
+        oneway TN
+        {
+            Incoming_order
+        };
+        oneway HYD
+        {
+            tem
+        };
+        oneway other
+        {
+            tem
+        };
+    };
+    internal porttype PortType_2
+    {
+        oneway Operation_1
+        {
+            tem
+        };
+    };
+    internal porttype TN_Rcv
+    {
+        oneway Operation_1
+        {
+            tem
+        };
+    };
+    internal porttype HYD_Send
+    {
+        oneway Operation_1
+        {
+            tem
+        };
+    };
+    internal porttype Others_Send
+    {
+        oneway Operation_1
+        {
+            tem
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service State_Routing
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements Incoming_Msg Port_1;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses TN_Rcv TN;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses HYD_Send HYD;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses Others_Send OThers;
+        message Incoming_order IN_Msg;
+        message tem Out_Msg;
+        message Incoming_order State_name_msg1;
+        message Incoming_order State_name_msg2;
+        System.String State;
+        System.Int64 xmldocument1;
+        System.Int64 xmldocument2;
+        System.Int64 result;
+        System.Xml.XmlDocument Out;
+        System.Xml.XmlDocument myxmlDoc;
+        System.String Invoice_ID;
+        System.String Address;
+        System.String result_str;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("bd0a80ab-ae5b-4d2e-9db1-107c4b42b0eb")]
+            activate receive (Port_1.Operation_1, IN_Msg);
+            State = "";
+            Out = new System.Xml.XmlDocument();
+            myxmlDoc = new System.Xml.XmlDocument();
+            Invoice_ID = "";
+            Address = "";
+            result_str = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("7330b5dd-64b7-4e3f-99ee-05bd8723638f")]
+            State = xpath(IN_Msg,"string(/*[local-name()='AllOrders' and namespace-uri()='http://simpleRouting.Incoming_order']/*[local-name()='Orders' and namespace-uri()='']/*[local-name()='State' and namespace-uri()=''])");
+            
+            
+            xmldocument1 = System.Convert.ToInt64(xpath(IN_Msg,"number/*[local-name()='AllOrders' and namespace-uri()='http://simpleRouting.Incoming_order']/*[local-name()='Orders' and namespace-uri()='']/*[local-name()='Number1' and namespace-uri()='']"));
+            xmldocument2 =  System.Convert.ToInt64(xpath(IN_Msg,"number/*[local-name()='AllOrders' and namespace-uri()='http://simpleRouting.Incoming_order']/*[local-name()='Orders' and namespace-uri()='']/*[local-name()='Number2' and namespace-uri()='']"));
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f727d639-cae3-4c46-abad-c44254dff86a")]
+            if (State == "TN")
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("6f8bb4eb-2179-4403-b0eb-30348a115bc0")]
+                construct Out_Msg
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("7da18f4b-945e-48a9-adcf-1f3d5bd08d92")]
+                    
+                    
+                    myxmlDoc = new System.Xml.XmlDocument();
+                    myxmlDoc=IN_Msg;
+                    
+                    Invoice_ID=IN_Msg.Orders.InvocieId;
+                    
+                    State = IN_Msg.Orders.State;
+                    
+                    Address = IN_Msg.Orders.Address;
+                    
+                    result = xmldocument1+xmldocument2;
+                    
+                    //result_str = System.Convert.ToString(result);
+                    
+                    myxmlDoc.LoadXml("<ns0:Root xmlns:ns0='http://simpleRouting.tem'><InvoiceID>"+Invoice_ID+"</InvoiceID> <Address>"+Address+"</Address>  <State>"+State+"</State>  <Result> result </Result> </ns0:Root>");
+                    
+                    Out_Msg = myxmlDoc;
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("e5e8cf06-b6e9-4696-be55-d3e2cec4c480")]
+                send (TN.Operation_1, Out_Msg);
+            }
+            else 
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("2c26e42e-5904-4602-a90f-f271d097adc1")]
+                if (State == "HYD")
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("00762a35-b069-4c25-9a57-fd689c5f1fc5")]
+                    construct Out_Msg
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("e5b2d0f2-9f9a-453d-a1a8-fff0befaf8a4")]
+                        
+                        
+                        myxmlDoc = new System.Xml.XmlDocument();
+                        myxmlDoc=IN_Msg;
+                        
+                        Invoice_ID=IN_Msg.Orders.InvocieId;
+                        
+                        State = IN_Msg.Orders.State;
+                        
+                        Address = IN_Msg.Orders.Address;
+                        
+                        result = xmldocument1+xmldocument2;
+                        
+                        //result_str = System.Convert.ToString(result);
+                        
+                        myxmlDoc.LoadXml("<ns0:Root xmlns:ns0='http://simpleRouting.tem'><InvoiceID>"+Invoice_ID+"</InvoiceID> <Address>"+Address+"</Address>  <State>"+State+"</State>  <Result>result</Result> </ns0:Root>");
+                        
+                        Out_Msg = myxmlDoc;
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("811b39bf-8eba-461c-a274-b9d5e18e5aec")]
+                    send (HYD.Operation_1, Out_Msg);
+                }
+                else 
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("acda1a2e-7f74-42f3-ac78-7a3a352cffe3")]
+                    construct Out_Msg
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("2af1217a-e726-4ffb-92c3-b925bd62c73a")]
+                        
+                        
+                        myxmlDoc = new System.Xml.XmlDocument();
+                        myxmlDoc=IN_Msg;
+                        
+                        Invoice_ID=IN_Msg.Orders.InvocieId;
+                        
+                        State = IN_Msg.Orders.State;
+                        
+                        Address = IN_Msg.Orders.Address;
+                        
+                        result = xmldocument1+xmldocument2;
+                        
+                        //result_str = System.Convert.ToString(result);
+                        
+                        myxmlDoc.LoadXml("<ns0:Root xmlns:ns0='http://simpleRouting.tem'><InvoiceID>"+Invoice_ID+"</InvoiceID> <Address>"+Address+"</Address>  <State>"+State+"</State>  <Result>result</Result> </ns0:Root>");
+                        
+                        Out_Msg = myxmlDoc;
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("1ed4df07-25fd-4196-8a6b-786c5c72d5a4")]
+                    send (OThers.Operation_1, Out_Msg);
+                }
+            }
+        }
+    }
+}
+

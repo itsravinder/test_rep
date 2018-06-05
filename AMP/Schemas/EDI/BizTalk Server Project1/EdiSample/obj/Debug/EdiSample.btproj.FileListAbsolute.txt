@@ -1,0 +1,4 @@
+C:\AMP\Schemas\EDI\BizTalk Server Project1\EdiSample\bin\Debug\EdiSample.dll
+C:\AMP\Schemas\EDI\BizTalk Server Project1\EdiSample\bin\Debug\EdiSample.pdb
+C:\AMP\Schemas\EDI\BizTalk Server Project1\EdiSample\obj\Debug\EdiSample.dll
+C:\AMP\Schemas\EDI\BizTalk Server Project1\EdiSample\obj\Debug\EdiSample.pdb

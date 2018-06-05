@@ -1,0 +1,4 @@
+C:\AMP\Flat File\Diff_FF\Temp_Sql\bin\Debug\Temp_Sql22.dll
+C:\AMP\Flat File\Diff_FF\Temp_Sql\bin\Debug\Temp_Sql22.pdb
+C:\AMP\Flat File\Diff_FF\Temp_Sql\obj\Debug\Temp_Sql22.dll
+C:\AMP\Flat File\Diff_FF\Temp_Sql\obj\Debug\Temp_Sql22.pdb

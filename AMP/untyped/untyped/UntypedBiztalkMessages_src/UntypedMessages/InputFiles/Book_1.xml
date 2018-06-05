@@ -1,0 +1,7 @@
+<ns0:BookMessage xmlns:ns0="http://UntypedMessages.Book">
+  <RegID>0120120</RegID>
+  <Author>Bill Gates</Author>
+  <Pages>200</Pages>
+  <Operation>SELL</Operation>
+  <ExpectedPrice>$299.99</ExpectedPrice>
+</ns0:BookMessage>

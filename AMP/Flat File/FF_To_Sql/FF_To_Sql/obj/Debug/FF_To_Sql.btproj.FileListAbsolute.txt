@@ -1,0 +1,4 @@
+C:\AMP\Flat File\FF_To_Sql\FF_To_Sql\bin\Debug\FF_To_Sql.dll
+C:\AMP\Flat File\FF_To_Sql\FF_To_Sql\bin\Debug\FF_To_Sql.pdb
+C:\AMP\Flat File\FF_To_Sql\FF_To_Sql\obj\Debug\FF_To_Sql.dll
+C:\AMP\Flat File\FF_To_Sql\FF_To_Sql\obj\Debug\FF_To_Sql.pdb

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperClass", "HelperClass\HelperClass.btproj", "{B5CD6DCA-3DAF-4ABD-BBE4-AB3FC7E7D597}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperClass_Biz", "HelperClass_Biz\HelperClass_Biz.csproj", "{75C8FAD9-E08E-44C1-B78A-5F12CF5D33D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5CD6DCA-3DAF-4ABD-BBE4-AB3FC7E7D597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5CD6DCA-3DAF-4ABD-BBE4-AB3FC7E7D597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5CD6DCA-3DAF-4ABD-BBE4-AB3FC7E7D597}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B5CD6DCA-3DAF-4ABD-BBE4-AB3FC7E7D597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5CD6DCA-3DAF-4ABD-BBE4-AB3FC7E7D597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5CD6DCA-3DAF-4ABD-BBE4-AB3FC7E7D597}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{75C8FAD9-E08E-44C1-B78A-5F12CF5D33D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75C8FAD9-E08E-44C1-B78A-5F12CF5D33D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75C8FAD9-E08E-44C1-B78A-5F12CF5D33D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75C8FAD9-E08E-44C1-B78A-5F12CF5D33D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

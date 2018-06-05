@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ns0:StoreFront xmlns:ns0="http://UntypedMessages.StoreFront">
+  <RegID>342434</RegID>
+  <Category>CAR</Category>
+  <ExpectedPrice>$30,000</ExpectedPrice>
+  <DataItem1>Cadillac</DataItem1>
+  <DataItem2>2005</DataItem2>
+  <Operation>BUY</Operation>
+</ns0:StoreFront>

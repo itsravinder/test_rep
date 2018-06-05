@@ -1,0 +1,208 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="460c763d-d825-487e-af4a-27c3d9bbafea" LowerBound="1.1" HigherBound="46.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Consuming_rest" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="3efbbee2-a629-490d-ba1f-ff15536be4c2" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ConversionResp_tpe" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="3a19685d-36eb-450c-ad99-ab463a084065" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ConvertCurrency" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="e4124c9a-4f2f-4bdc-a136-7907b18fb936" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.24">
+                    <om:Property Name="Ref" Value="Consuming_rest.Invoice_Xml" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="e7d4af05-9a4c-4bdf-bf16-fbe8c4daa2a1" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="8.26" HigherBound="8.48">
+                    <om:Property Name="Ref" Value="System.Xml.XmlDocument" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="b2293e52-d6f1-4338-9ef3-974a740e07ed" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Invoice_Rcv_type" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="2cd814a1-fb52-4d78-b079-70410d6e4898" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="e08ebf6c-2cdc-4ce6-916a-5711f7a434c8" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.24">
+                    <om:Property Name="Ref" Value="Consuming_rest.Invoice_Xml" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="c2b422d9-72ad-49cf-8390-cabbac7ca80f" ParentLink="Module_ServiceDeclaration" LowerBound="18.1" HigherBound="45.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ProcessInvoice" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="MessageDeclaration" OID="3c0aaf3b-9a15-496d-ad3d-1e0e11fa9c64" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="Consuming_rest.Invoice_Xml" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="InvoiceInput" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="50c2fd1c-7767-402f-8309-a12c4a386ab6" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="28.1">
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="InvoiceOutput" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="231b7126-5d97-44df-8bd4-fd4307564beb" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="28.1" HigherBound="29.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ConvesionResp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="3336e6e2-8e55-48e4-8df9-fdccf7734ab5" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="816f5297-b45b-4c79-a17d-f897a966b626" ParentLink="ServiceBody_Statement" LowerBound="31.1" HigherBound="33.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Invoice_Rcv" />
+                    <om:Property Name="MessageName" Value="InvoiceInput" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Send" OID="37a285c8-64a6-462b-867e-c6711f8b8942" ParentLink="ServiceBody_Statement" LowerBound="33.1" HigherBound="35.1">
+                    <om:Property Name="PortName" Value="ConversionResp" />
+                    <om:Property Name="MessageName" Value="InvoiceInput" />
+                    <om:Property Name="OperationName" Value="ConvertCurrency" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Receive" OID="6d35051f-2f56-4bb9-9300-3d2526a2d0a6" ParentLink="ServiceBody_Statement" LowerBound="35.1" HigherBound="37.1">
+                    <om:Property Name="Activate" Value="False" />
+                    <om:Property Name="PortName" Value="ConversionResp" />
+                    <om:Property Name="MessageName" Value="ConvesionResp" />
+                    <om:Property Name="OperationName" Value="ConvertCurrency" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_2" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="bf4ec222-85a1-436a-aa8f-ade0cbb2644c" ParentLink="ServiceBody_Statement" LowerBound="37.1" HigherBound="41.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructMessage_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="MessageAssignment" OID="2bab4ff6-e8f2-49a8-bd54-d64aa14c86b7" ParentLink="ComplexStatement_Statement">
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="MessageAssignment_1" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="b8e108ec-399a-4b63-a656-6022bfaaa0ad" ParentLink="ServiceBody_Statement" LowerBound="41.1" HigherBound="43.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_2" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="a3587d7d-4cbd-4748-971c-a6d748b3dafd" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Consuming_rest.ConversionResp_tpe" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ConversionResp" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="b770bd77-9946-459e-916d-2673059d440e" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="b6ef259a-ff4b-4e3c-aad6-cf0c99dcafce" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Consuming_rest.Invoice_Rcv_type" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Invoice_Rcv" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="c82c86fb-8d85-4486-b09b-b84aa18de214" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Consuming_rest
+{
+    internal porttype ConversionResp_tpe
+    {
+        requestresponse ConvertCurrency
+        {
+            Invoice_Xml, System.Xml.XmlDocument
+        };
+    };
+    internal porttype Invoice_Rcv_type
+    {
+        oneway Operation_1
+        {
+            Invoice_Xml
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service ProcessInvoice
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses ConversionResp_tpe ConversionResp;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements Invoice_Rcv_type Invoice_Rcv;
+        message Invoice_Xml InvoiceInput;
+
+#error "No Message Type."
+        message System.Xml.XmlDocument ConvesionResp;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("816f5297-b45b-4c79-a17d-f897a966b626")]
+            activate receive (Invoice_Rcv.Operation_1, InvoiceInput);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("37a285c8-64a6-462b-867e-c6711f8b8942")]
+            send (ConversionResp.ConvertCurrency, InvoiceInput);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("6d35051f-2f56-4bb9-9300-3d2526a2d0a6")]
+            receive (ConversionResp.ConvertCurrency, ConvesionResp);
+
+#error "No Constructed Messages."
+
+#error "Errors exist for one or more children."
+
+#error "No Message."
+        }
+    }
+}
+

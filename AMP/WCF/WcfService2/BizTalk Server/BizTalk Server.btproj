@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{39C37E1E-E14E-491B-BB66-D7DAFA5B6F0A}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>BizTalk_Server</RootNamespace>
+    <AssemblyName>BizTalk Server</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>snk.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\Wcfservice2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="snk.snk" />
+    <Schema Include="Input.xsd">
+      <TypeName>Input</TypeName>
+      <Namespace>BizTalk_Server</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <None Include="Service References\Wcfservice2\Service1.wsdl" />
+    <Schema Include="Service1_schemas_microsoft_com_2003_10_Serialization.xsd">
+      <Namespace>BizTalk_Server</Namespace>
+      <TypeName>Service1_schemas_microsoft_com_2003_10_Serialization</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Service1_tempuri_org.xsd">
+      <Namespace>BizTalk_Server</Namespace>
+      <TypeName>Service1_tempuri_org</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Service References\Wcfservice2\Service1.xsd">
+      <TypeName>Service1</TypeName>
+      <Namespace>BizTalk_Server.Wcfservice2</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Service References\Wcfservice2\Service11.xsd">
+      <TypeName>Service11</TypeName>
+      <Namespace>BizTalk_Server.Wcfservice2</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Wcfservice2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Wcfservice2\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Wcfservice2\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Wcfservice2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="BizTalk Orchestration1.odx">
+      <TypeName>BizTalk_Orchestration1</TypeName>
+      <Namespace>BizTalk_Server</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Service1.BindingInfo.xml" />
+    <Map Include="Transform_2.btm">
+      <TypeName>Transform_2</TypeName>
+      <Namespace>BizTalk_Server</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="Transform_1.btm">
+      <TypeName>Transform_1</TypeName>
+      <Namespace>BizTalk_Server</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <XLang Include="Service1.odx">
+      <TypeName>Service1</TypeName>
+      <Namespace>BizTalk_Server</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+    <Content Include="Service1_Custom.BindingInfo.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

@@ -1,0 +1,4 @@
+C:\AMP\sql\sqlbound\ins_sql\Return_Sql\bin\Debug\Return_Sql.dll
+C:\AMP\sql\sqlbound\ins_sql\Return_Sql\bin\Debug\Return_Sql.pdb
+C:\AMP\sql\sqlbound\ins_sql\Return_Sql\obj\Debug\Return_Sql.dll
+C:\AMP\sql\sqlbound\ins_sql\Return_Sql\obj\Debug\Return_Sql.pdb

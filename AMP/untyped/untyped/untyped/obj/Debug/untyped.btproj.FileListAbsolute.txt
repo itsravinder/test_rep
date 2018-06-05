@@ -1,0 +1,4 @@
+C:\AMP\untyped\untyped\untyped\bin\Debug\untyped.dll
+C:\AMP\untyped\untyped\untyped\bin\Debug\untyped.pdb
+C:\AMP\untyped\untyped\untyped\obj\Debug\untyped.dll
+C:\AMP\untyped\untyped\untyped\obj\Debug\untyped.pdb

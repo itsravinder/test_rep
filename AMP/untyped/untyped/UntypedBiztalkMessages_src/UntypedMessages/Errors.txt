@@ -1,0 +1,1 @@
+There was a failure executing the send pipeline: "Microsoft.BizTalk.DefaultPipelines.XMLTransmit" Source: "XML assembler" Send Port: "C:\BiztalkProjects\LoanProcessing\Out\Output_%MessageID%.xml" Reason: This Assembler cannot retrieve document specification by using this type: "OutputMessage". 

@@ -1,0 +1,3 @@
+<CustomerInfo xmlns="http://www.digitaldeposit.net/biztalk/samples/Customer">
+        <CustomerID>string</CustomerID>
+      </CustomerInfo>

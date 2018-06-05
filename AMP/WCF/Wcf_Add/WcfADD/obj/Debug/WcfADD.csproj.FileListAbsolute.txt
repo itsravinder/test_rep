@@ -1,0 +1,6 @@
+C:\AMP\WCF\Wcf_Add\WcfADD\bin\WcfADD.dll.config
+C:\AMP\WCF\Wcf_Add\WcfADD\bin\WcfADD.dll
+C:\AMP\WCF\Wcf_Add\WcfADD\bin\WcfADD.pdb
+C:\AMP\WCF\Wcf_Add\WcfADD\obj\Debug\WcfADD.csprojResolveAssemblyReference.cache
+C:\AMP\WCF\Wcf_Add\WcfADD\obj\Debug\WcfADD.dll
+C:\AMP\WCF\Wcf_Add\WcfADD\obj\Debug\WcfADD.pdb

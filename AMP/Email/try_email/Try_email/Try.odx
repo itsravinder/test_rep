@@ -1,0 +1,476 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="7b4f562f-4a31-41ce-8f23-cbec6d7c09dd" LowerBound="1.1" HigherBound="114.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Try_email" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="179a86aa-23f0-4697-b11e-eb71431b99e7" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="60f65066-144d-41aa-aaf3-bc296517a34d" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="462cde30-b0e0-43af-82c9-f5b10e59ae46" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.24">
+                    <om:Property Name="Ref" Value="Try_email.Product_cat" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="d4595689-b22d-402f-bd57-b90c51633974" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="86610eb1-107b-415a-99bd-e515828ae8a3" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="0c664d7b-e2dd-45d7-b97d-127bb1b60405" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.24">
+                    <om:Property Name="Ref" Value="Try_email.Product_cat" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="b65d1a00-8eb6-4854-8d67-a95b0fd440e9" ParentLink="Module_ServiceDeclaration" LowerBound="18.1" HigherBound="113.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Try" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="70b06191-ca94-42a6-b22b-2eccbf50386e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="33.1" HigherBound="34.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Cat" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="24894b71-99b2-465f-9a7d-00e04a4e3d38" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="34.1" HigherBound="35.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strEmail" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="0670c35a-281f-4832-a4ef-cf895b81d5e3" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="35.1" HigherBound="36.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strSubject" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="f14750a6-3e1c-413a-9e94-09bd2451c610" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="36.1" HigherBound="37.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strHost" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="3dd0bd68-f919-4db0-a6ba-e0a9ea5a5c19" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="37.1" HigherBound="38.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strFrom" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="deba8084-518d-4e6b-9b8d-e4699feb897c" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="38.1" HigherBound="39.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strEmailTo" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="bf436ed6-e6ce-4ab0-bd49-a8237cf2fe29" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="Try_email.Product_cat" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="input" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="800d2ce0-8f53-4081-af69-0d258c6948bd" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="Type" Value="Try_email.Product_cat" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="dummy" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="4d48e5d3-5dfa-411e-b20e-58006389b92e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="27.1" HigherBound="28.1">
+                <om:Property Name="Type" Value="Try_email.Product_cat" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="dummy_data" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="d76d1e7f-29a4-4bc1-8989-ec5079e6c2a7" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="28.1" HigherBound="29.1">
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="EmailBodyMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="992702e2-ea53-4bc6-9b57-564d856b99af" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="29.1" HigherBound="30.1">
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="EmailHostMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="21d18516-f8ed-4221-9ebc-6c6e9550f72b" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="30.1" HigherBound="31.1">
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="EmailFromMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="57042315-afe7-4147-8b9d-5fff6d85d0ea" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="31.1" HigherBound="32.1">
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="EmailToMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="cbcd9589-e2ce-40f7-911d-888d22a2aafa" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="32.1" HigherBound="33.1">
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="EmailSubjectMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="70cf3346-b218-413f-96f5-06b0a6de63f0" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="6e8365c3-841a-48c6-83a0-4b976d5ce6aa" ParentLink="ServiceBody_Statement" LowerBound="41.1" HigherBound="49.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Port_1" />
+                    <om:Property Name="MessageName" Value="input" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="dc96c638-3cba-4804-8c8e-51d0fe1100ce" ParentLink="ServiceBody_Statement" LowerBound="49.1" HigherBound="51.1">
+                    <om:Property Name="Expression" Value="Cat = input.Type;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Expression_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="c2335bfd-3185-4e6c-84cc-fa3bbca07d00" ParentLink="ServiceBody_Statement" LowerBound="51.1" HigherBound="111.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Scope_1" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Decision" OID="8d8adc47-7db4-4d62-86ee-043f70d01bbc" ParentLink="ComplexStatement_Statement" LowerBound="56.1" HigherBound="109.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Decide_1" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="DecisionBranch" OID="a8fdca90-2301-4a09-8498-88e364694a67" ParentLink="ReallyComplexStatement_Branch" LowerBound="57.21" HigherBound="74.1">
+                            <om:Property Name="Expression" Value="Cat == &quot;phone&quot;" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Rule_1" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="c9c16340-2c73-420f-bc60-07722d269e4d" ParentLink="ComplexStatement_Statement" LowerBound="59.1" HigherBound="65.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructMessage_1" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageAssignment" OID="0c012440-6511-4ccc-9abf-3d76b3bac872" ParentLink="ComplexStatement_Statement" LowerBound="62.1" HigherBound="64.1">
+                                    <om:Property Name="Expression" Value="dummy = input;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="a8ec5971-32cb-4c24-9d0f-eb84e9a199bc" ParentLink="Construct_MessageRef" LowerBound="60.35" HigherBound="60.40">
+                                    <om:Property Name="Ref" Value="dummy" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Construct" OID="b9ba78ab-1568-44ea-8f4a-501823f539c3" ParentLink="ComplexStatement_Statement" LowerBound="65.1" HigherBound="71.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructMessage_2" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="Transform" OID="a877bc3d-465b-41eb-a169-8e4d9d85b97f" ParentLink="ComplexStatement_Statement" LowerBound="68.1" HigherBound="70.1">
+                                    <om:Property Name="ClassName" Value="Try_email.Transform_1" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Transform_1" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessagePartRef" OID="b0e86922-c38d-4abb-af8f-303a17699b24" ParentLink="Transform_InputMessagePartRef" LowerBound="69.77" HigherBound="69.82">
+                                        <om:Property Name="MessageRef" Value="dummy" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_1" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="5721b974-447c-44de-bf4f-3945d6588f5d" ParentLink="Transform_OutputMessagePartRef" LowerBound="69.40" HigherBound="69.50">
+                                        <om:Property Name="MessageRef" Value="dummy_data" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_2" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="e6a02854-b9ec-4122-abae-564edc7dcbfb" ParentLink="Construct_MessageRef" LowerBound="66.35" HigherBound="66.45">
+                                    <om:Property Name="Ref" Value="dummy_data" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="57a0d94b-9864-46d1-bb43-6dff4bc5da97" ParentLink="ComplexStatement_Statement" LowerBound="71.1" HigherBound="73.1">
+                                <om:Property Name="PortName" Value="Port_2" />
+                                <om:Property Name="MessageName" Value="dummy_data" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="ce7c7b5e-d3a5-44c5-949f-ba2e34e998c6" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Construct" OID="1d53ce96-69c5-4b69-bbc5-f5b8961aba88" ParentLink="ComplexStatement_Statement" LowerBound="76.1" HigherBound="106.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ConstructMessage_3" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageAssignment" OID="7748ad8f-edb6-4e63-92f6-0b5d7993cdba" ParentLink="ComplexStatement_Statement" LowerBound="79.1" HigherBound="105.1">
+                                    <om:Property Name="Expression" Value="EmailBodyMsg= System.String.Empty;&#xD;&#xA;EmailFromMsg = System.String.Empty;&#xD;&#xA;EmailHostMsg = System.String.Empty;&#xD;&#xA;EmailSubjectMsg = System.String.Empty;&#xD;&#xA;EmailToMsg = System.String.Empty;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;//Getting data form SSO&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;strEmail = TSSG.SSO.Utility.Helper_Class.Read(&quot;Sending_Notification&quot;,&quot;Notification_EmailBody&quot;);&#xD;&#xA;strSubject = TSSG.SSO.Utility.Helper_Class.Read(&quot;Sending_Notification&quot;,&quot;Notification_subject&quot;);&#xD;&#xA;strHost = TSSG.SSO.Utility.Helper_Class.Read(&quot;Sending_Notification&quot;,&quot;Notification_EmailHost&quot;);&#xD;&#xA;strFrom = TSSG.SSO.Utility.Helper_Class.Read(&quot;Sending_Notification&quot;,&quot;Notification_EmailFrom&quot;);&#xD;&#xA;strEmailTo = TSSG.SSO.Utility.Helper_Class.Read(&quot;Sending_Notification&quot;,&quot;Notification_EmailTo&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;//Assign_data&#xD;&#xA;                           &#xD;&#xA;//Assign Parameters to Messages                                &#xD;&#xA;EmailBodyMsg=strEmail;&#xD;&#xA;EmailSubjectMsg = strSubject;&#xD;&#xA;EmailHostMsg = strHost;&#xD;&#xA;EmailFromMsg = strFrom;&#xD;&#xA;EmailToMsg = strEmailTo;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_2" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="710a5fd5-3366-4cfa-aff9-0ad38a2f95d1" ParentLink="Construct_MessageRef" LowerBound="77.35" HigherBound="77.47">
+                                    <om:Property Name="Ref" Value="EmailBodyMsg" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="e44c9619-5591-4c4f-b317-9fe7fe5207d6" ParentLink="Construct_MessageRef" LowerBound="77.49" HigherBound="77.61">
+                                    <om:Property Name="Ref" Value="EmailFromMsg" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="d711a700-8236-472b-95ac-c9d045fc390e" ParentLink="Construct_MessageRef" LowerBound="77.63" HigherBound="77.75">
+                                    <om:Property Name="Ref" Value="EmailHostMsg" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="c5a986ea-3083-49b1-b4ae-ae481d9f2323" ParentLink="Construct_MessageRef" LowerBound="77.77" HigherBound="77.92">
+                                    <om:Property Name="Ref" Value="EmailSubjectMsg" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="6fe47b4b-77e7-4078-92ea-ee91b47e5db3" ParentLink="Construct_MessageRef" LowerBound="77.94" HigherBound="77.104">
+                                    <om:Property Name="Ref" Value="EmailToMsg" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Exec" OID="00760bb9-4b98-4759-8544-1b8e442c29a7" ParentLink="ComplexStatement_Statement" LowerBound="106.1" HigherBound="108.1">
+                                <om:Property Name="Invokee" Value="Email_Notification.Email_Not" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="StartOrchestration_1" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Parameter" OID="7d95c3f9-8d12-48b1-ad95-f743ce6564f5" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="In" />
+                                    <om:Property Name="Name" Value="EmailHostMsg" />
+                                    <om:Property Name="Type" Value="System.String" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Parameter" OID="af00cb52-f9a0-40fa-b12f-fe5a96b4f524" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="In" />
+                                    <om:Property Name="Name" Value="EmailToMsg" />
+                                    <om:Property Name="Type" Value="System.String" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Parameter" OID="b93b80fe-9798-47af-889d-4edb08c43104" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="In" />
+                                    <om:Property Name="Name" Value="EmailBodyMsg" />
+                                    <om:Property Name="Type" Value="System.String" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Parameter" OID="46cb34e2-c945-40b7-87c5-985d0073d0de" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="In" />
+                                    <om:Property Name="Name" Value="EmailSubjectMsg" />
+                                    <om:Property Name="Type" Value="System.String" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Parameter" OID="c814c826-603a-42fb-a1ef-00d66f31dff5" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="In" />
+                                    <om:Property Name="Name" Value="EmailFromMsg" />
+                                    <om:Property Name="Type" Value="System.String" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="21218a0b-603c-4cef-ac66-a083425ec647" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Unbound" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Try_email.PortType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="08c7e843-614a-4ae2-a489-1b950d5a6b64" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="f40450c5-f2f2-4e31-b8f5-2cf486ae9911" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Unbound" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Try_email.PortType_2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_2" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="cfa50621-0527-4d83-b85d-df115399497f" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Try_email
+{
+    internal porttype PortType_1
+    {
+        oneway Operation_1
+        {
+            Product_cat
+        };
+    };
+    internal porttype PortType_2
+    {
+        oneway Operation_1
+        {
+            Product_cat
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service Try
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_1 Port_1;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_2 Port_2;
+        message Product_cat input;
+        message Product_cat dummy;
+        message Product_cat dummy_data;
+        message System.String EmailBodyMsg;
+        message System.String EmailHostMsg;
+        message System.String EmailFromMsg;
+        message System.String EmailToMsg;
+        message System.String EmailSubjectMsg;
+        System.String Cat;
+        System.String strEmail;
+        System.String strSubject;
+        System.String strHost;
+        System.String strFrom;
+        System.String strEmailTo;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("6e8365c3-841a-48c6-83a0-4b976d5ce6aa")]
+            activate receive (Port_1.Operation_1, input);
+            Cat = "";
+            strEmail = "";
+            strSubject = "";
+            strHost = "";
+            strFrom = "";
+            strEmailTo = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("dc96c638-3cba-4804-8c8e-51d0fe1100ce")]
+            Cat = input.Type;
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("c2335bfd-3185-4e6c-84cc-fa3bbca07d00")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("8d8adc47-7db4-4d62-86ee-043f70d01bbc")]
+                    if (Cat == "phone")
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("c9c16340-2c73-420f-bc60-07722d269e4d")]
+                        construct dummy
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("0c012440-6511-4ccc-9abf-3d76b3bac872")]
+                            dummy = input;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b9ba78ab-1568-44ea-8f4a-501823f539c3")]
+                        construct dummy_data
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a877bc3d-465b-41eb-a169-8e4d9d85b97f")]
+                            transform (dummy_data) = Try_email.Transform_1 (dummy);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("57a0d94b-9864-46d1-bb43-6dff4bc5da97")]
+                        send (Port_2.Operation_1, dummy_data);
+                    }
+                    else 
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("1d53ce96-69c5-4b69-bbc5-f5b8961aba88")]
+                        construct EmailBodyMsg, EmailFromMsg, EmailHostMsg, EmailSubjectMsg, EmailToMsg
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("7748ad8f-edb6-4e63-92f6-0b5d7993cdba")]
+                            EmailBodyMsg= System.String.Empty;
+                            EmailFromMsg = System.String.Empty;
+                            EmailHostMsg = System.String.Empty;
+                            EmailSubjectMsg = System.String.Empty;
+                            EmailToMsg = System.String.Empty;
+                            
+                            
+                            //Getting data form SSO
+                            
+                            
+                            strEmail = TSSG.SSO.Utility.Helper_Class.Read("Sending_Notification","Notification_EmailBody");
+                            strSubject = TSSG.SSO.Utility.Helper_Class.Read("Sending_Notification","Notification_subject");
+                            strHost = TSSG.SSO.Utility.Helper_Class.Read("Sending_Notification","Notification_EmailHost");
+                            strFrom = TSSG.SSO.Utility.Helper_Class.Read("Sending_Notification","Notification_EmailFrom");
+                            strEmailTo = TSSG.SSO.Utility.Helper_Class.Read("Sending_Notification","Notification_EmailTo");
+                            
+                            
+                            //Assign_data
+                                                       
+                            //Assign Parameters to Messages                                
+                            EmailBodyMsg=strEmail;
+                            EmailSubjectMsg = strSubject;
+                            EmailHostMsg = strHost;
+                            EmailFromMsg = strFrom;
+                            EmailToMsg = strEmailTo;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("00760bb9-4b98-4759-8544-1b8e442c29a7")]
+                        exec Email_Notification.Email_Not (EmailHostMsg, EmailToMsg, EmailBodyMsg, EmailSubjectMsg, EmailFromMsg);
+                    }
+                }
+            }
+        }
+    }
+}
+

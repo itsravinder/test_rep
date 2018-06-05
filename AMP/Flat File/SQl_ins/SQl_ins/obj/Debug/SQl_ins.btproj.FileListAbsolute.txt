@@ -1,0 +1,4 @@
+C:\AMP\Flat File\SQl_ins\SQl_ins\bin\Debug\SQl_ins.dll
+C:\AMP\Flat File\SQl_ins\SQl_ins\bin\Debug\SQl_ins.pdb
+C:\AMP\Flat File\SQl_ins\SQl_ins\obj\Debug\SQl_ins.dll
+C:\AMP\Flat File\SQl_ins\SQl_ins\obj\Debug\SQl_ins.pdb

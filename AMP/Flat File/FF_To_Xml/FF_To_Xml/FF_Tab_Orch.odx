@@ -1,0 +1,191 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="7b02b9a5-438f-4d6d-9e02-7e656a6c219b" LowerBound="1.1" HigherBound="43.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="FF_To_Xml" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="9b7c3b30-96ce-4b5b-9041-2d52c9107404" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="FF_Tab_port" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="5af76df1-6122-4df3-b18c-910556ee6719" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="74310e95-f51a-41d9-ad08-27a7cb3cdceb" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.19">
+                    <om:Property Name="Ref" Value="FF_To_Xml.FF_TAB" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="5a927bd2-970c-408e-8124-d39328bca58e" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="FF_Tab_send_type" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="49d88cbb-9e6d-4e25-a81e-7fd1246a2f40" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="c18f040f-cae0-4ce8-be9f-8148da251a6e" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.19">
+                    <om:Property Name="Ref" Value="FF_To_Xml.FF_TAB" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="b550f705-bfbd-4448-aaec-3cf4dea6b2c2" ParentLink="Module_ServiceDeclaration" LowerBound="18.1" HigherBound="42.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="FF_Tab_Orch" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="MessageDeclaration" OID="2ad5b4e5-cd04-419b-93aa-68d46bf75117" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="FF_To_Xml.FF_TAB" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="In_msg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="c3e7d199-a222-4121-9a25-7a8d641b9f59" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="Type" Value="FF_To_Xml.FF_TAB" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Out_msg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="5935f202-846b-4458-8e59-a058057f164e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="27.1" HigherBound="28.1">
+                <om:Property Name="Type" Value="FF_To_Xml.FF_TAB" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DummyMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="409de3ac-38ff-4599-9cd7-09f4e6f49bf5" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="f435e593-cfc8-4a6f-ade1-9c96e41dc40b" ParentLink="ServiceBody_Statement" LowerBound="30.1" HigherBound="32.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="FF_Tab" />
+                    <om:Property Name="MessageName" Value="In_msg" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="cea19c54-a80f-4e76-8cd9-a36a2136b444" ParentLink="ServiceBody_Statement" LowerBound="32.1" HigherBound="38.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructMessage_1" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageAssignment" OID="6ad58cb3-d12b-41de-a95b-28f056ee4b8e" ParentLink="ComplexStatement_Statement" LowerBound="35.1" HigherBound="37.1">
+                        <om:Property Name="Expression" Value="DummyMsg = In_msg;" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="MessageAssignment_1" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="24b87bee-530d-4364-8939-3b0d47c14e6f" ParentLink="Construct_MessageRef" LowerBound="33.23" HigherBound="33.31">
+                        <om:Property Name="Ref" Value="DummyMsg" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="fe1788c1-8b05-4d75-b33a-6932e9d21a83" ParentLink="ServiceBody_Statement" LowerBound="38.1" HigherBound="40.1">
+                    <om:Property Name="PortName" Value="FF_Tab_send" />
+                    <om:Property Name="MessageName" Value="DummyMsg" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="616aa406-bb47-47d5-86ae-17efbcbcb6a9" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="FF_To_Xml.FF_Tab_port" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="FF_Tab" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="ba7f2a13-1589-49e8-9e39-6815fd4b60b4" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="149f8b2b-0c50-4360-8c2a-65cc7402ae78" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="FF_To_Xml.FF_Tab_send_type" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="FF_Tab_send" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="4aaf9244-f94e-482e-a65b-aba3d42fa4f2" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module FF_To_Xml
+{
+    internal porttype FF_Tab_port
+    {
+        oneway Operation_1
+        {
+            FF_TAB
+        };
+    };
+    internal porttype FF_Tab_send_type
+    {
+        oneway Operation_1
+        {
+            FF_TAB
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service FF_Tab_Orch
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements FF_Tab_port FF_Tab;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses FF_Tab_send_type FF_Tab_send;
+        message FF_TAB In_msg;
+        message FF_TAB Out_msg;
+        message FF_TAB DummyMsg;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f435e593-cfc8-4a6f-ade1-9c96e41dc40b")]
+            activate receive (FF_Tab.Operation_1, In_msg);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("cea19c54-a80f-4e76-8cd9-a36a2136b444")]
+            construct DummyMsg
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("6ad58cb3-d12b-41de-a95b-28f056ee4b8e")]
+                DummyMsg = In_msg;
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("fe1788c1-8b05-4d75-b33a-6932e9d21a83")]
+            send (FF_Tab_send.Operation_1, DummyMsg);
+        }
+    }
+}
+

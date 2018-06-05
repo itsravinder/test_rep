@@ -1,0 +1,6 @@
+bin\Debug\SOAPMessagingOnly.WebServiceClient.dll.config
+bin\Debug\SOAPMessagingOnly.WebServiceClient.dll
+bin\Debug\SOAPMessagingOnly.WebServiceClient.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SOAPMessagingOnly.WebServiceClient.dll
+obj\Debug\SOAPMessagingOnly.WebServiceClient.pdb

@@ -1,0 +1,108 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="de0e3fce-a0fe-41d6-be2d-6eaf0df2549b">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Temp_Sql" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="691b40d7-01f2-42b6-8242-080b858a0c63" ParentLink="Module_PortType">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata port type: " />
+            <om:Property Name="Name" Value="TypedProcedures_dbo" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="58d87f0b-0b86-4cfe-b9fb-0f5d5bb015b4" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata operation: " />
+                <om:Property Name="Name" Value="MasterInsertUpdateDelete" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="5acf3e4a-1cc9-4e4a-8d23-22c096911cdc" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="Temp_Sql.TypedProcedures_dbo_MasterInsertUpdateDelete_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="adb2ce78-5f6f-44de-92de-7919e05b713c" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="Temp_Sql.TypedProcedures_dbo_MasterInsertUpdateDelete_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="d8276187-5aad-4c70-b1dd-fe11743c1b7a" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="TypedProcedures_dbo_MasterInsertUpdateDelete_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="982eb649-0ccd-4d92-913a-0c4fa8da262f" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="Temp_Sql.sqlBinding_dbo.MasterInsertUpdateDelete" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="ce643687-2809-4b91-b99e-14b19c8e2107" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="TypedProcedures_dbo_MasterInsertUpdateDelete_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="aaac0e21-a2a8-42ae-a6ca-e6d4edee05fc" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="Temp_Sql.sqlBinding_dbo.MasterInsertUpdateDeleteResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="243280d1-6452-42c3-805b-e44820c294b2" ParentLink="Module_ServiceDeclaration">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Orchestration_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="8fb0644e-ebcf-46b9-97f4-347e9ceeb5e2" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Temp_Sql
+{
+    internal messagetype TypedProcedures_dbo_MasterInsertUpdateDelete_InputMessage
+    {
+        body sqlBinding_dbo.MasterInsertUpdateDelete parameters;
+    };
+    internal messagetype TypedProcedures_dbo_MasterInsertUpdateDelete_OutputMessage
+    {
+        body sqlBinding_dbo.MasterInsertUpdateDeleteResponse parameters;
+    };
+    internal porttype TypedProcedures_dbo
+    {
+        requestresponse MasterInsertUpdateDelete
+        {
+            TypedProcedures_dbo_MasterInsertUpdateDelete_InputMessage, TypedProcedures_dbo_MasterInsertUpdateDelete_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service Orchestration_1
+    {
+        body ()
+        {
+        }
+    }
+}
+

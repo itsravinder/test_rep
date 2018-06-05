@@ -1,0 +1,4 @@
+C:\AMP\Rest_Example\Rest_Example\bin\Debug\WCF_Expose.dll
+C:\AMP\Rest_Example\Rest_Example\bin\Debug\WCF_Expose.pdb
+C:\AMP\Rest_Example\Rest_Example\obj\Debug\WCF_Expose.dll
+C:\AMP\Rest_Example\Rest_Example\obj\Debug\WCF_Expose.pdb

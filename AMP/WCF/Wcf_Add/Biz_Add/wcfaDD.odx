@@ -1,0 +1,320 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="7a09a912-28a8-4615-b509-c6df671ed18b" LowerBound="1.1" HigherBound="64.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Biz_Add" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="905dda26-a12f-450c-ad4e-4dc824c317f8" ParentLink="Module_PortType" LowerBound="12.1" HigherBound="19.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;IwcfaDD&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IwcfaDD" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="1b4975ca-d7e8-4634-a668-c06c5f08dd13" ParentLink="PortType_OperationDeclaration" LowerBound="14.1" HigherBound="18.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;add&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="add" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="7a00c338-9bea-47e6-9c8c-da0d408a6c8b" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="16.13" HigherBound="16.37">
+                    <om:Property Name="Ref" Value="Biz_Add.IwcfaDD_add_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IwcfaDD_add_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IwcfaDD/add&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="97683ff2-777b-447c-aba3-7d8642dd821f" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="16.39" HigherBound="16.64">
+                    <om:Property Name="Ref" Value="Biz_Add.IwcfaDD_add_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IwcfaDD_add_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IwcfaDD/addResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="c5e07df2-e98f-4aea-b4ef-bde77ec55a2c" ParentLink="Module_PortType" LowerBound="19.1" HigherBound="26.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Rcv_input_type" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="293de9c9-bb08-475f-8990-7f762a4285ea" ParentLink="PortType_OperationDeclaration" LowerBound="21.1" HigherBound="25.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="2fba608b-5561-404a-848d-a5fdee81fa1b" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="23.13" HigherBound="23.25">
+                    <om:Property Name="Ref" Value="Biz_Add.Input_schema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="cca8f62d-4681-4da0-bbb4-1cb6e257f35c" ParentLink="Module_PortType" LowerBound="26.1" HigherBound="33.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Output_response" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="d70c0abb-6936-4007-aacd-21485c0d4d6b" ParentLink="PortType_OperationDeclaration" LowerBound="28.1" HigherBound="32.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="b7686363-6b15-4c3d-a7f2-5660df36668d" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="30.13" HigherBound="30.38">
+                    <om:Property Name="Ref" Value="Biz_Add.IwcfaDD_add_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="4256e943-f2f8-4d2d-9c86-090c405bc83c" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IwcfaDD_add_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IwcfaDD_add_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="e2ca8592-e6ff-4e13-b9c4-150ecefff59f" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="Biz_Add.wcfaDD_tempuri_org.add" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="b590ca9c-ed8d-42da-9d0d-0ccb4fa69394" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IwcfaDD_add_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IwcfaDD_add_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="96ce9864-b3d1-4118-9457-81686552d6b3" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="Biz_Add.wcfaDD_tempuri_org.addResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="ad8fb03a-7256-4670-9d07-578428b4ff61" ParentLink="Module_ServiceDeclaration" LowerBound="33.1" HigherBound="63.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;wcfaDD&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="wcfaDDClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="21e5baa1-70e9-4cff-981b-49aeeae53ffd" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="6c6ada16-1222-44ae-a667-97a2e4c1347e" ParentLink="ServiceBody_Statement" LowerBound="47.1" HigherBound="49.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Rcv_input" />
+                    <om:Property Name="MessageName" Value="Input" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="c06e9dd8-9934-43f5-92f7-16d0d72cb5a4" ParentLink="ServiceBody_Statement" LowerBound="49.1" HigherBound="55.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructMessage_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="Transform" OID="9ac65648-9018-4cfe-b3df-a6e22aaa1a8b" ParentLink="ComplexStatement_Statement" LowerBound="52.1" HigherBound="54.1">
+                        <om:Property Name="ClassName" Value="Biz_Add.Transform_1" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transform_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessagePartRef" OID="542451e5-aed0-4c7e-8050-b6c7e0f85aea" ParentLink="Transform_InputMessagePartRef" LowerBound="53.75" HigherBound="53.80">
+                            <om:Property Name="MessageRef" Value="Input" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="b15855ef-9627-44dd-97bd-b54db40a8da7" ParentLink="Transform_OutputMessagePartRef" LowerBound="53.28" HigherBound="53.50">
+                            <om:Property Name="MessageRef" Value="Wcf_request" />
+                            <om:Property Name="PartRef" Value="parameters" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="8f7e61ce-d0b9-4f65-8b4d-ab949ea02a39" ParentLink="Construct_MessageRef" LowerBound="50.23" HigherBound="50.34">
+                        <om:Property Name="Ref" Value="Wcf_request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="40418879-68a3-4bc9-947b-c287e94df28c" ParentLink="ServiceBody_Statement" LowerBound="55.1" HigherBound="57.1">
+                    <om:Property Name="PortName" Value="Port_1" />
+                    <om:Property Name="MessageName" Value="Wcf_request" />
+                    <om:Property Name="OperationName" Value="add" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Receive" OID="b69409d3-bc0c-4f25-b29c-4c3087bfc6f2" ParentLink="ServiceBody_Statement" LowerBound="57.1" HigherBound="59.1">
+                    <om:Property Name="Activate" Value="False" />
+                    <om:Property Name="PortName" Value="Port_1" />
+                    <om:Property Name="MessageName" Value="Wcf_Response" />
+                    <om:Property Name="OperationName" Value="add" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_2" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Send" OID="f3baa9c0-1656-4c57-be14-0648928efd40" ParentLink="ServiceBody_Statement" LowerBound="59.1" HigherBound="61.1">
+                    <om:Property Name="PortName" Value="OutPut" />
+                    <om:Property Name="MessageName" Value="Wcf_Response" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_2" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="7c1759a0-d91e-4ed3-bd0a-e408aaed3c32" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="36.1" HigherBound="38.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Biz_Add.Rcv_input_type" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Rcv_input" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="5c253f16-467a-42ac-af5c-637e966f4040" ParentLink="PortDeclaration_CLRAttribute" LowerBound="36.1" HigherBound="37.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="b158d0bc-7330-4bc7-be00-2d0a9f8221e2" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="38.1" HigherBound="40.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Biz_Add.IwcfaDD" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="215d4119-983a-494f-9415-82cb17d3b61b" ParentLink="PortDeclaration_CLRAttribute" LowerBound="38.1" HigherBound="39.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="d25e0eb9-3079-4c9f-8417-e6e05d36721d" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="40.1" HigherBound="42.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Biz_Add.Output_response" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OutPut" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="71d2a64f-6066-490b-afd1-7b2c96264c34" ParentLink="PortDeclaration_CLRAttribute" LowerBound="40.1" HigherBound="41.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f22000b2-f68c-4865-95cc-393bb27841df" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="42.1" HigherBound="43.1">
+                <om:Property Name="Type" Value="Biz_Add.Input_schema" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Input" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="80862e78-7b0c-4377-bfd9-72179cf8aa26" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="43.1" HigherBound="44.1">
+                <om:Property Name="Type" Value="Biz_Add.IwcfaDD_add_InputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Wcf_request" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="59320802-c991-40f4-b776-10b2fc80eabf" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="44.1" HigherBound="45.1">
+                <om:Property Name="Type" Value="Biz_Add.IwcfaDD_add_OutputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Wcf_Response" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Biz_Add
+{
+    internal messagetype IwcfaDD_add_InputMessage
+    {
+        body wcfaDD_tempuri_org.add parameters;
+    };
+    internal messagetype IwcfaDD_add_OutputMessage
+    {
+        body wcfaDD_tempuri_org.addResponse parameters;
+    };
+    internal porttype IwcfaDD
+    {
+        requestresponse add
+        {
+            IwcfaDD_add_InputMessage, IwcfaDD_add_OutputMessage
+        };
+    };
+    internal porttype Rcv_input_type
+    {
+        oneway Operation_1
+        {
+            Input_schema
+        };
+    };
+    internal porttype Output_response
+    {
+        oneway Operation_1
+        {
+            IwcfaDD_add_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service wcfaDDClient
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements Rcv_input_type Rcv_input;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses IwcfaDD Port_1;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses Output_response OutPut;
+        message Input_schema Input;
+        message IwcfaDD_add_InputMessage Wcf_request;
+        message IwcfaDD_add_OutputMessage Wcf_Response;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("6c6ada16-1222-44ae-a667-97a2e4c1347e")]
+            activate receive (Rcv_input.Operation_1, Input);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("c06e9dd8-9934-43f5-92f7-16d0d72cb5a4")]
+            construct Wcf_request
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("9ac65648-9018-4cfe-b3df-a6e22aaa1a8b")]
+                transform (Wcf_request.parameters) = Biz_Add.Transform_1 (Input);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("40418879-68a3-4bc9-947b-c287e94df28c")]
+            send (Port_1.add, Wcf_request);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b69409d3-bc0c-4f25-b29c-4c3087bfc6f2")]
+            receive (Port_1.add, Wcf_Response);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f3baa9c0-1656-4c57-be14-0648928efd40")]
+            send (OutPut.Operation_1, Wcf_Response);
+        }
+    }
+}
+

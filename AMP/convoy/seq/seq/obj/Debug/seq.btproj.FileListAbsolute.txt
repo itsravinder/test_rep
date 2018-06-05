@@ -1,0 +1,4 @@
+C:\AMP\convoy\seq\seq\bin\Debug\seq.dll
+C:\AMP\convoy\seq\seq\bin\Debug\seq.pdb
+C:\AMP\convoy\seq\seq\obj\Debug\seq.dll
+C:\AMP\convoy\seq\seq\obj\Debug\seq.pdb

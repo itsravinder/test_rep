@@ -1,0 +1,4 @@
+C:\AMP\env\Typed_messages\Typed_messages\bin\Debug\Typed_messages.dll
+C:\AMP\env\Typed_messages\Typed_messages\bin\Debug\Typed_messages.pdb
+C:\AMP\env\Typed_messages\Typed_messages\obj\Debug\Typed_messages.dll
+C:\AMP\env\Typed_messages\Typed_messages\obj\Debug\Typed_messages.pdb

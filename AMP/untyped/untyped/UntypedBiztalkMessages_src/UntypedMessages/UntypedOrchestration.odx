@@ -1,0 +1,439 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="9f251c00-a850-4355-ac8f-4a9eed3cc373" LowerBound="1.1" HigherBound="130.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="UntypedMessages" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="5a13792c-745b-4078-9a97-b848f5471b54" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="InputMessagePortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="38522dc1-5409-441c-9b43-8a2ade9d934d" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Receive" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="b0bb841f-fdb0-4377-8762-d396e969ef2b" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.35">
+                    <om:Property Name="Ref" Value="System.Xml.XmlDocument" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="22e35d74-bb1f-472e-a58f-c94c88031fe7" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="OutputMessagePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="c3997776-6ff9-419c-9ce7-2d75dc6799fe" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Send" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="f912144f-c351-4853-866d-64809e8dc006" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.35">
+                    <om:Property Name="Ref" Value="System.Xml.XmlDocument" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="29728672-d6cd-4c24-974c-197f21523eb5" ParentLink="Module_ServiceDeclaration" LowerBound="18.1" HigherBound="129.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="UntypedOrchestration" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="cb88c883-70b5-4ead-9b9d-d564f842a6bd" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="30.1" HigherBound="31.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="xmlDocument" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7472b540-9bf2-4c65-9c48-fd61d40a5376" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="31.1" HigherBound="32.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="regId" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="fb309771-ed7b-48f6-a3f4-28e314b876c4" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="32.1" HigherBound="33.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="category" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="49528ef2-6aa7-4a80-93af-3fc45cd1bfa4" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="33.1" HigherBound="34.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="expectedPrice" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="b90c10a7-7640-4ed1-b9d9-4be5b1854d9f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="34.1" HigherBound="35.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="dataItem1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="48e50205-5ab5-4bb5-a56f-8518771f64b8" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="35.1" HigherBound="36.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="dataItem2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="c5c60686-046c-41c5-b3d6-f62b54ad2d5a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="36.1" HigherBound="37.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="operation" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="221c0703-00e7-4b86-9be8-9d5783586d13" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="InputMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="ff7f1339-5432-4417-809a-a98810f8fb64" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OutputMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="8b101d38-2a32-4a13-901a-23d722f2f843" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="27.1" HigherBound="28.1">
+                <om:Property Name="Type" Value="UntypedMessages.Book" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="BookMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="4ba5749a-a390-4b63-bf5e-7df482858603" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="28.1" HigherBound="29.1">
+                <om:Property Name="Type" Value="UntypedMessages.Music" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MusicMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="45bb542e-c451-4590-af6c-0a04d13929b9" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="29.1" HigherBound="30.1">
+                <om:Property Name="Type" Value="UntypedMessages.Car" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CarMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="daf18817-57c9-4d76-bdd0-f613748f8eaa" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="2e540850-e12b-4875-bb10-74684f602b15" ParentLink="ServiceBody_Statement" LowerBound="39.1" HigherBound="48.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="InputMessagePort" />
+                    <om:Property Name="MessageName" Value="InputMessage" />
+                    <om:Property Name="OperationName" Value="Receive" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="UntypedMessage" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Decision" OID="3ecd7333-e209-491e-8d6d-023cdcebc924" ParentLink="ServiceBody_Statement" LowerBound="48.1" HigherBound="125.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Separate Messages" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="DecisionBranch" OID="8b3e939b-f4fa-42fe-a429-5fb07715b2b5" ParentLink="ReallyComplexStatement_Branch" LowerBound="49.13" HigherBound="71.1">
+                        <om:Property Name="Expression" Value="// Message Type consists of TargetNamespace#SchemaRootElementName&#xD;&#xA;InputMessage(BTS.MessageType) == &quot;http://UntypedMessages.Book#BookMessage&quot;&#xD;&#xA;" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Book" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="2e402df5-dc51-4625-bd4a-ca4612a887ca" ParentLink="ComplexStatement_Statement" LowerBound="53.1" HigherBound="70.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Message_1" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageAssignment" OID="62656e77-7384-4e42-99c3-93daeb8f12e3" ParentLink="ComplexStatement_Statement" LowerBound="56.1" HigherBound="69.1">
+                                <om:Property Name="Expression" Value="BookMsg = InputMessage;&#xD;&#xA;regId = BookMsg.RegID;&#xD;&#xA;category = &quot;BOOK&quot;;&#xD;&#xA;operation = BookMsg.Operation;&#xD;&#xA;dataItem1 = BookMsg.Author;&#xD;&#xA;dataItem2 = BookMsg.Pages;&#xD;&#xA;expectedPrice = BookMsg.ExpectedPrice;&#xD;&#xA;&#xD;&#xA;xmlDocument = new System.Xml.XmlDocument();  &#xD;&#xA;xmlDocument.LoadXml(&quot;&lt;ns0:StoreFront xmlns:ns0='http://UntypedMessages.StoreFront'&gt;&lt;RegID&gt;&quot;+ regId +&quot;&lt;/RegID&gt;&lt;Category&gt;&quot;+ category +&quot;&lt;/Category&gt;&lt;ExpectedPrice&gt;&quot;+ expectedPrice +&quot;&lt;/ExpectedPrice&gt;&lt;DataItem1&gt;&quot;+ dataItem1 +&quot;&lt;/DataItem1&gt;&lt;DataItem2&gt;&quot;+ dataItem2 +&quot;&lt;/DataItem2&gt;&lt;Operation&gt;&quot;+ operation +&quot;&lt;/Operation&gt;&lt;/ns0:StoreFront&gt;&quot;);&#xD;&#xA;&#xD;&#xA;OutputMessage = xmlDocument;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="BuldMessage" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="a4f31d82-52fb-408d-9de5-bf3ded9e04f1" ParentLink="Construct_MessageRef" LowerBound="54.27" HigherBound="54.40">
+                                <om:Property Name="Ref" Value="OutputMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="70573150-1503-4fe4-91a9-a1ba9086a245" ParentLink="Construct_MessageRef" LowerBound="54.42" HigherBound="54.49">
+                                <om:Property Name="Ref" Value="BookMsg" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="46775a71-e7fd-4657-ba47-eddf170712a7" ParentLink="ReallyComplexStatement_Branch" LowerBound="71.18" HigherBound="95.1">
+                        <om:Property Name="Expression" Value="InputMessage(BTS.MessageType) == &quot;http://UntypedMessages.Car#CarMessage&quot;" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Car" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="4c5c9b74-fcf5-4920-8f36-05e216a6cb00" ParentLink="ComplexStatement_Statement" LowerBound="74.1" HigherBound="94.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Message_2" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageAssignment" OID="ee416620-e379-4eee-8c66-603a26c8bcf0" ParentLink="ComplexStatement_Statement" LowerBound="77.1" HigherBound="93.1">
+                                <om:Property Name="Expression" Value="CarMsg = InputMessage;&#xD;&#xA;&#xD;&#xA;regId = CarMsg.RegID;&#xD;&#xA;category = &quot;CAR&quot;;&#xD;&#xA;operation = CarMsg.Operation;&#xD;&#xA;dataItem1 = CarMsg.Make;&#xD;&#xA;dataItem2 = CarMsg.Model;&#xD;&#xA;expectedPrice = CarMsg.ExpectedPrice;&#xD;&#xA;&#xD;&#xA;xmlDocument = new System.Xml.XmlDocument();&#xD;&#xA;&#xD;&#xA;xmlDocument = new System.Xml.XmlDocument();  &#xD;&#xA;xmlDocument.LoadXml(&quot;&lt;ns0:StoreFront xmlns:ns0='http://UntypedMessages.StoreFront'&gt;&lt;RegID&gt;&quot;+ regId +&quot;&lt;/RegID&gt;&lt;Category&gt;&quot;+ category +&quot;&lt;/Category&gt;&lt;ExpectedPrice&gt;&quot;+ expectedPrice +&quot;&lt;/ExpectedPrice&gt;&lt;DataItem1&gt;&quot;+ dataItem1 +&quot;&lt;/DataItem1&gt;&lt;DataItem2&gt;&quot;+ dataItem2 +&quot;&lt;/DataItem2&gt;&lt;Operation&gt;&quot;+ operation +&quot;&lt;/Operation&gt;&lt;/ns0:StoreFront&gt;&quot;);&#xD;&#xA;&#xD;&#xA;OutputMessage = xmlDocument;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="BuildMessage" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="480f78d1-bac3-4b06-a592-9250e9e1f4f3" ParentLink="Construct_MessageRef" LowerBound="75.27" HigherBound="75.40">
+                                <om:Property Name="Ref" Value="OutputMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="1508887a-b5c7-4b7c-9b15-b4751fae3563" ParentLink="Construct_MessageRef" LowerBound="75.42" HigherBound="75.48">
+                                <om:Property Name="Ref" Value="CarMsg" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="22c6055a-147f-4fea-9225-3663e2555199" ParentLink="ReallyComplexStatement_Branch" LowerBound="95.18" HigherBound="118.1">
+                        <om:Property Name="Expression" Value="InputMessage(BTS.MessageType) == &quot;http://UntypedMessages.Music#MusicMessage&quot;&#xD;&#xA;" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Music" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="1b699787-3e2f-42da-85a3-a7838dc9aa7c" ParentLink="ComplexStatement_Statement" LowerBound="98.1" HigherBound="117.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Message_3" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageAssignment" OID="f46c2718-b39e-4dcb-a0de-e2ee359b88d8" ParentLink="ComplexStatement_Statement" LowerBound="101.1" HigherBound="116.1">
+                                <om:Property Name="Expression" Value="MusicMsg = InputMessage;&#xD;&#xA;&#xD;&#xA;regId = MusicMsg.RegID;&#xD;&#xA;category = &quot;MUSIC&quot;;&#xD;&#xA;operation = MusicMsg.Operation;&#xD;&#xA;dataItem1 = MusicMsg.Album;&#xD;&#xA;dataItem2 = MusicMsg.Artist;&#xD;&#xA;expectedPrice = MusicMsg.ExpectedPrice;&#xD;&#xA;&#xD;&#xA;xmlDocument = new System.Xml.XmlDocument();  &#xD;&#xA;xmlDocument.LoadXml(&quot;&lt;ns0:StoreFront xmlns:ns0='http://UntypedMessages.StoreFront'&gt;&lt;RegID&gt;&quot;+ regId +&quot;&lt;/RegID&gt;&lt;Category&gt;&quot;+ category +&quot;&lt;/Category&gt;&lt;ExpectedPrice&gt;&quot;+ expectedPrice +&quot;&lt;/ExpectedPrice&gt;&lt;DataItem1&gt;&quot;+ dataItem1 +&quot;&lt;/DataItem1&gt;&lt;DataItem2&gt;&quot;+ dataItem2 +&quot;&lt;/DataItem2&gt;&lt;Operation&gt;&quot;+ operation +&quot;&lt;/Operation&gt;&lt;/ns0:StoreFront&gt;&quot;);&#xD;&#xA;&#xD;&#xA;OutputMessage = xmlDocument;&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="BuildMessage" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="702f55bf-695f-4b37-99ca-1818da9dfa07" ParentLink="Construct_MessageRef" LowerBound="99.27" HigherBound="99.35">
+                                <om:Property Name="Ref" Value="MusicMsg" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="249630bf-d0c9-4100-aebc-b8cb98714e3a" ParentLink="Construct_MessageRef" LowerBound="99.37" HigherBound="99.50">
+                                <om:Property Name="Ref" Value="OutputMessage" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="4af31b96-9e33-4470-921a-f29a8134e9da" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="VariableAssignment" OID="678dc521-75d8-425d-826c-d309a0e3b9a9" ParentLink="ComplexStatement_Statement" LowerBound="120.1" HigherBound="122.1">
+                            <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;Unknown Message Type Received:&quot;, InputMessage(BTS.MessageType));" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="WriteToLog" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Terminate" OID="e3480423-8bb0-4195-8b67-f29e99893b5d" ParentLink="ComplexStatement_Statement" LowerBound="122.1" HigherBound="124.1">
+                            <om:Property Name="ErrorMessage" Value="&quot;Process Terminated due to unknown message type&quot;;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Terminate Process" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="b44a5577-c441-47b4-bc16-8aaeed54a000" ParentLink="ServiceBody_Statement" LowerBound="125.1" HigherBound="127.1">
+                    <om:Property Name="PortName" Value="OutputMessagePort" />
+                    <om:Property Name="MessageName" Value="OutputMessage" />
+                    <om:Property Name="OperationName" Value="Send" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="SendMessage" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="1cd80084-5235-4aae-b589-90d12bfb9f95" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="UntypedMessages.InputMessagePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="InputMessagePort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="77a73742-eebb-425b-a173-7876fc96caa5" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="287e6e09-cdbd-4a94-8ef9-5b2ce7c38542" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="22" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="UntypedMessages.OutputMessagePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OutputMessagePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="17df7742-02b7-4ca6-b878-d5a2d6b60c45" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module UntypedMessages
+{
+    internal porttype InputMessagePortType
+    {
+        oneway Receive
+        {
+            System.Xml.XmlDocument
+        };
+    };
+    internal porttype OutputMessagePortType
+    {
+        oneway Send
+        {
+            System.Xml.XmlDocument
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service UntypedOrchestration
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements InputMessagePortType InputMessagePort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses OutputMessagePortType OutputMessagePort;
+        message System.Xml.XmlDocument InputMessage;
+        message System.Xml.XmlDocument OutputMessage;
+        message Book BookMsg;
+        message Music MusicMsg;
+        message Car CarMsg;
+        System.Xml.XmlDocument xmlDocument;
+        System.String regId;
+        System.String category;
+        System.String expectedPrice;
+        System.String dataItem1;
+        System.String dataItem2;
+        System.String operation;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("2e540850-e12b-4875-bb10-74684f602b15")]
+            activate receive (InputMessagePort.Receive, InputMessage);
+            xmlDocument = new System.Xml.XmlDocument();
+            regId = "";
+            category = "";
+            expectedPrice = "";
+            dataItem1 = "";
+            dataItem2 = "";
+            operation = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3ecd7333-e209-491e-8d6d-023cdcebc924")]
+            if (// Message Type consists of TargetNamespace#SchemaRootElementName
+                InputMessage(BTS.MessageType) == "http://UntypedMessages.Book#BookMessage"
+                )
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("2e402df5-dc51-4625-bd4a-ca4612a887ca")]
+                construct OutputMessage, BookMsg
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("62656e77-7384-4e42-99c3-93daeb8f12e3")]
+                    BookMsg = InputMessage;
+                    regId = BookMsg.RegID;
+                    category = "BOOK";
+                    operation = BookMsg.Operation;
+                    dataItem1 = BookMsg.Author;
+                    dataItem2 = BookMsg.Pages;
+                    expectedPrice = BookMsg.ExpectedPrice;
+                    
+                    xmlDocument = new System.Xml.XmlDocument();  
+                    xmlDocument.LoadXml("<ns0:StoreFront xmlns:ns0='http://UntypedMessages.StoreFront'><RegID>"+ regId +"</RegID><Category>"+ category +"</Category><ExpectedPrice>"+ expectedPrice +"</ExpectedPrice><DataItem1>"+ dataItem1 +"</DataItem1><DataItem2>"+ dataItem2 +"</DataItem2><Operation>"+ operation +"</Operation></ns0:StoreFront>");
+                    
+                    OutputMessage = xmlDocument;
+                }
+            }
+            else if (InputMessage(BTS.MessageType) == "http://UntypedMessages.Car#CarMessage"
+                )
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("4c5c9b74-fcf5-4920-8f36-05e216a6cb00")]
+                construct OutputMessage, CarMsg
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("ee416620-e379-4eee-8c66-603a26c8bcf0")]
+                    CarMsg = InputMessage;
+                    
+                    regId = CarMsg.RegID;
+                    category = "CAR";
+                    operation = CarMsg.Operation;
+                    dataItem1 = CarMsg.Make;
+                    dataItem2 = CarMsg.Model;
+                    expectedPrice = CarMsg.ExpectedPrice;
+                    
+                    xmlDocument = new System.Xml.XmlDocument();
+                    
+                    xmlDocument = new System.Xml.XmlDocument();  
+                    xmlDocument.LoadXml("<ns0:StoreFront xmlns:ns0='http://UntypedMessages.StoreFront'><RegID>"+ regId +"</RegID><Category>"+ category +"</Category><ExpectedPrice>"+ expectedPrice +"</ExpectedPrice><DataItem1>"+ dataItem1 +"</DataItem1><DataItem2>"+ dataItem2 +"</DataItem2><Operation>"+ operation +"</Operation></ns0:StoreFront>");
+                    
+                    OutputMessage = xmlDocument;
+                }
+            }
+            else if (InputMessage(BTS.MessageType) == "http://UntypedMessages.Music#MusicMessage"
+                )
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("1b699787-3e2f-42da-85a3-a7838dc9aa7c")]
+                construct MusicMsg, OutputMessage
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f46c2718-b39e-4dcb-a0de-e2ee359b88d8")]
+                    MusicMsg = InputMessage;
+                    
+                    regId = MusicMsg.RegID;
+                    category = "MUSIC";
+                    operation = MusicMsg.Operation;
+                    dataItem1 = MusicMsg.Album;
+                    dataItem2 = MusicMsg.Artist;
+                    expectedPrice = MusicMsg.ExpectedPrice;
+                    
+                    xmlDocument = new System.Xml.XmlDocument();  
+                    xmlDocument.LoadXml("<ns0:StoreFront xmlns:ns0='http://UntypedMessages.StoreFront'><RegID>"+ regId +"</RegID><Category>"+ category +"</Category><ExpectedPrice>"+ expectedPrice +"</ExpectedPrice><DataItem1>"+ dataItem1 +"</DataItem1><DataItem2>"+ dataItem2 +"</DataItem2><Operation>"+ operation +"</Operation></ns0:StoreFront>");
+                    
+                    OutputMessage = xmlDocument;
+                    
+                }
+            }
+            else 
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("678dc521-75d8-425d-826c-d309a0e3b9a9")]
+                System.Diagnostics.EventLog.WriteEntry("Unknown Message Type Received:", InputMessage(BTS.MessageType));
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("e3480423-8bb0-4195-8b67-f29e99893b5d")]
+                terminate "Process Terminated due to unknown message type";;
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b44a5577-c441-47b4-bc16-8aaeed54a000")]
+            send (OutputMessagePort.Send, OutputMessage);
+        }
+    }
+}
+

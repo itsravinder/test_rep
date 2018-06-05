@@ -1,0 +1,5 @@
+C:\AMP\WCF\temp_wcf\Temp_biz\bin\Debug\Temp_biz.dll.config
+C:\AMP\WCF\temp_wcf\Temp_biz\bin\Debug\Temp_biz.dll
+C:\AMP\WCF\temp_wcf\Temp_biz\bin\Debug\Temp_biz.pdb
+C:\AMP\WCF\temp_wcf\Temp_biz\obj\Debug\Temp_biz.dll
+C:\AMP\WCF\temp_wcf\Temp_biz\obj\Debug\Temp_biz.pdb

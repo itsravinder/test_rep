@@ -1,0 +1,22 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatchProcess", "BatchProcess.btproj", "{405760B3-A598-4AC2-B821-5BA18565C304}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Deployment|Default = Deployment|Default
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{405760B3-A598-4AC2-B821-5BA18565C304}.Deployment|Default.ActiveCfg = Deployment|Any CPU
+		{405760B3-A598-4AC2-B821-5BA18565C304}.Deployment|Default.Build.0 = Deployment|Any CPU
+		{405760B3-A598-4AC2-B821-5BA18565C304}.Deployment|Default.Deploy.0 = Deployment|Any CPU
+		{405760B3-A598-4AC2-B821-5BA18565C304}.Development|Default.ActiveCfg = Development|Any CPU
+		{405760B3-A598-4AC2-B821-5BA18565C304}.Development|Default.Build.0 = Development|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,4 @@
+C:\AMP\Scope\Bre\BizTalk Server Project1\Bre_Scope\bin\Debug\Bre_Scope.dll
+C:\AMP\Scope\Bre\BizTalk Server Project1\Bre_Scope\bin\Debug\Bre_Scope.pdb
+C:\AMP\Scope\Bre\BizTalk Server Project1\Bre_Scope\obj\Debug\Bre_Scope.dll
+C:\AMP\Scope\Bre\BizTalk Server Project1\Bre_Scope\obj\Debug\Bre_Scope.pdb

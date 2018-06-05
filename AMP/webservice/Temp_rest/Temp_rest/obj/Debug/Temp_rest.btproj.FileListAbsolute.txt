@@ -1,0 +1,4 @@
+C:\AMP\webservice\Temp_rest\Temp_rest\bin\Debug\Temp_rest.dll
+C:\AMP\webservice\Temp_rest\Temp_rest\bin\Debug\Temp_rest.pdb
+C:\AMP\webservice\Temp_rest\Temp_rest\obj\Debug\Temp_rest.dll
+C:\AMP\webservice\Temp_rest\Temp_rest\obj\Debug\Temp_rest.pdb

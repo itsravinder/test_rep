@@ -1,0 +1,5 @@
+C:\AMP\env\debatchingsplitting\debatchingsplitting\bin\Debug\debatchingsplitting.dll
+C:\AMP\env\debatchingsplitting\debatchingsplitting\bin\Debug\debatchingsplitting.pdb
+C:\AMP\env\debatchingsplitting\debatchingsplitting\bin\Debug\PipelineObjects.dll
+C:\AMP\env\debatchingsplitting\debatchingsplitting\obj\Debug\debatchingsplitting.dll
+C:\AMP\env\debatchingsplitting\debatchingsplitting\obj\Debug\debatchingsplitting.pdb

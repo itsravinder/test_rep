@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "seq", "seq\seq.btproj", "{AA62C310-2DB2-46E1-911F-C0D355C88D2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parallel", "Parallel\Parallel.btproj", "{5BB7D06E-FC2D-4F78-8518-39BF39080625}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA62C310-2DB2-46E1-911F-C0D355C88D2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA62C310-2DB2-46E1-911F-C0D355C88D2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA62C310-2DB2-46E1-911F-C0D355C88D2B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AA62C310-2DB2-46E1-911F-C0D355C88D2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA62C310-2DB2-46E1-911F-C0D355C88D2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA62C310-2DB2-46E1-911F-C0D355C88D2B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5BB7D06E-FC2D-4F78-8518-39BF39080625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB7D06E-FC2D-4F78-8518-39BF39080625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB7D06E-FC2D-4F78-8518-39BF39080625}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5BB7D06E-FC2D-4F78-8518-39BF39080625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB7D06E-FC2D-4F78-8518-39BF39080625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB7D06E-FC2D-4F78-8518-39BF39080625}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

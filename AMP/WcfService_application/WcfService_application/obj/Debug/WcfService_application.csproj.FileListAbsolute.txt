@@ -1,0 +1,6 @@
+C:\AMP\WcfService_application\WcfService_application\bin\WcfService_application.dll.config
+C:\AMP\WcfService_application\WcfService_application\bin\WcfService_application.dll
+C:\AMP\WcfService_application\WcfService_application\bin\WcfService_application.pdb
+C:\AMP\WcfService_application\WcfService_application\obj\Debug\WcfService_application.dll
+C:\AMP\WcfService_application\WcfService_application\obj\Debug\WcfService_application.pdb
+C:\AMP\WcfService_application\WcfService_application\obj\Debug\WcfService_application.csprojResolveAssemblyReference.cache

@@ -1,0 +1,4 @@
+C:\AMP\env\Complete_mapping\Complete_mapping\bin\Debug\Complete_mapping.dll
+C:\AMP\env\Complete_mapping\Complete_mapping\bin\Debug\Complete_mapping.pdb
+C:\AMP\env\Complete_mapping\Complete_mapping\obj\Debug\Complete_mapping.dll
+C:\AMP\env\Complete_mapping\Complete_mapping\obj\Debug\Complete_mapping.pdb

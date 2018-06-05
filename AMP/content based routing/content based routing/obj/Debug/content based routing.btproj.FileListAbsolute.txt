@@ -1,0 +1,4 @@
+C:\AMP\content based routing\content based routing\bin\Debug\content based routing.dll
+C:\AMP\content based routing\content based routing\bin\Debug\content based routing.pdb
+C:\AMP\content based routing\content based routing\obj\Debug\content based routing.dll
+C:\AMP\content based routing\content based routing\obj\Debug\content based routing.pdb

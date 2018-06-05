@@ -1,0 +1,4 @@
+C:\AMP\debacthing_Example\debacthing_Example\bin\Debug\debacthing_Example.dll
+C:\AMP\debacthing_Example\debacthing_Example\bin\Debug\debacthing_Example.pdb
+C:\AMP\debacthing_Example\debacthing_Example\obj\Debug\debacthing_Example.dll
+C:\AMP\debacthing_Example\debacthing_Example\obj\Debug\debacthing_Example.pdb

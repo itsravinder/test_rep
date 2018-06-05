@@ -1,0 +1,105 @@
+﻿<VisualStudioProject>
+    <BIZTALK
+        ProductVersion = "3.0.4902"
+        SchemaVersion = "1.0"
+        ProjectGuid = "{215E54BC-28F4-4F5B-9940-59B41ABDE15E}"
+    >
+        <Build>
+            <Settings>
+                <EditorCommon/>
+                <ProjectCommon
+                    AssemblyKeyName = ""
+                    AssemblyKeyFile = "C:\BiztalkProjects\LoanProcessing\LoanKey.snk"
+                    AssemblyDelaySign = "False"
+                    AssemblyTitle = ""
+                    AssemblyDescription = ""
+                    AssemblyDefaultAlias = ""
+                    AssemblyConfiguration = ""
+                    AssemblyTrademark = ""
+                    AssemblyProduct = ""
+                    AssemblyInformationalVersion = "1.0.0.0"
+                    AssemblyFileVersion = "1.0.0.0"
+                    AssemblyCopyright = ""
+                    AssemblyCompany = ""
+                    AssemblyVersion = "1.0.0.0"
+                    DefaultNamespace = "UntypedMessages"
+                    AssemblyName = "UntypedMessages"
+                />
+                <Config
+                    Name = "Development"
+                    BpelCompliance = "True"
+                    GenerateDebuggingInformation = "True"
+                    EmbedTrackingInformation = "True"
+                    TreatWarningsAsErrors = "False"
+                    WarningLevel = "4"
+                    OutputPath = "bin\Development\"
+                />
+                <Config
+                    Name = "Deployment"
+                    BpelCompliance = "True"
+                    GenerateDebuggingInformation = "False"
+                    EmbedTrackingInformation = "True"
+                    TreatWarningsAsErrors = "False"
+                    WarningLevel = "4"
+                    OutputPath = "bin\Deployment\"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "Microsoft.BizTalk.DefaultPipelines"
+                    AssemblyName = "Microsoft.BizTalk.DefaultPipelines"
+                />
+                <Reference
+                    Name = "Microsoft.BizTalk.GlobalPropertySchemas"
+                    AssemblyName = "Microsoft.BizTalk.GlobalPropertySchemas"
+                />
+                <Reference
+                    Name = "Microsoft.BizTalk.Pipeline.Components"
+                    AssemblyName = "Microsoft.BizTalk.Pipeline.Components"
+                    HintPath = "..\..\..\Program Files\Microsoft BizTalk Server 2004\Pipeline Components\Microsoft.BizTalk.Pipeline.Components.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "Book.xsd"
+                    BuildAction = "Compile"
+                    Namespace = "UntypedMessages"
+                    Type = "Book"
+                />
+                <File
+                    RelPath = "Car.xsd"
+                    BuildAction = "Compile"
+                    Namespace = "UntypedMessages"
+                    Type = "Car"
+                />
+                <File
+                    RelPath = "Music.xsd"
+                    BuildAction = "Compile"
+                    Namespace = "UntypedMessages"
+                    Type = "Music"
+                />
+                <File
+                    RelPath = "StoreFront.xsd"
+                    BuildAction = "Compile"
+                    Namespace = "UntypedMessages"
+                    Type = "StoreFront"
+                />
+                <File
+                    RelPath = "UntypedOrchestration.odx"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </BIZTALK>
+</VisualStudioProject>
+

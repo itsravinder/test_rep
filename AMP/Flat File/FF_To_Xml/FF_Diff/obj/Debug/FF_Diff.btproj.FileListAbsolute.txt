@@ -1,0 +1,4 @@
+C:\AMP\Flat File\FF_To_Xml\FF_Diff\bin\Debug\FF_Diff.dll
+C:\AMP\Flat File\FF_To_Xml\FF_Diff\bin\Debug\FF_Diff.pdb
+C:\AMP\Flat File\FF_To_Xml\FF_Diff\obj\Debug\FF_Diff.dll
+C:\AMP\Flat File\FF_To_Xml\FF_Diff\obj\Debug\FF_Diff.pdb

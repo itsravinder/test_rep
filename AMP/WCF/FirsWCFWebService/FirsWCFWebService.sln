@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirsWCFWebService", "FirsWCFWebService\FirsWCFWebService.csproj", "{9EDE2570-C318-4E95-B93C-F9D4FB30C319}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{7EB59F43-C7E9-41AB-88FB-F30E94FDCB69}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9EDE2570-C318-4E95-B93C-F9D4FB30C319} = {9EDE2570-C318-4E95-B93C-F9D4FB30C319}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EDE2570-C318-4E95-B93C-F9D4FB30C319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EDE2570-C318-4E95-B93C-F9D4FB30C319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EDE2570-C318-4E95-B93C-F9D4FB30C319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EDE2570-C318-4E95-B93C-F9D4FB30C319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EB59F43-C7E9-41AB-88FB-F30E94FDCB69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EB59F43-C7E9-41AB-88FB-F30E94FDCB69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EB59F43-C7E9-41AB-88FB-F30E94FDCB69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EB59F43-C7E9-41AB-88FB-F30E94FDCB69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

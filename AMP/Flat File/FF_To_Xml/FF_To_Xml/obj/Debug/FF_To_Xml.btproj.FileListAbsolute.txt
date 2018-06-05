@@ -1,0 +1,4 @@
+C:\AMP\Flat File\FF_To_Xml\FF_To_Xml\bin\Debug\FF_To_Xml.dll
+C:\AMP\Flat File\FF_To_Xml\FF_To_Xml\bin\Debug\FF_To_Xml.pdb
+C:\AMP\Flat File\FF_To_Xml\FF_To_Xml\obj\Debug\FF_To_Xml.dll
+C:\AMP\Flat File\FF_To_Xml\FF_To_Xml\obj\Debug\FF_To_Xml.pdb

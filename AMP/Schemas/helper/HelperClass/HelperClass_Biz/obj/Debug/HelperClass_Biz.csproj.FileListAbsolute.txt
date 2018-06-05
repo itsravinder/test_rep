@@ -1,0 +1,5 @@
+C:\AMP\Schemas\helper\HelperClass\HelperClass_Biz\bin\Debug\HelperClass_Biz.dll
+C:\AMP\Schemas\helper\HelperClass\HelperClass_Biz\bin\Debug\HelperClass_Biz.pdb
+C:\AMP\Schemas\helper\HelperClass\HelperClass_Biz\obj\Debug\HelperClass_Biz.csprojResolveAssemblyReference.cache
+C:\AMP\Schemas\helper\HelperClass\HelperClass_Biz\obj\Debug\HelperClass_Biz.dll
+C:\AMP\Schemas\helper\HelperClass\HelperClass_Biz\obj\Debug\HelperClass_Biz.pdb

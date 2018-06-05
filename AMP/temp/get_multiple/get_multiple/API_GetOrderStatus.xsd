@@ -1,0 +1,37 @@
+﻿<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://externalschemas.rrd.com/digitalpcs/v1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetOrderStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Header">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="FromIdentity"/>
+              <xs:element type="xs:string" name="FromPassCode"/>
+              <xs:element type="xs:dateTime" name="EnvelopeDate"/>
+              <xs:element type="xs:int" name="EnvelopeNum"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Orders">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Order">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="OrderHeader">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:long" name="OrderNum"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

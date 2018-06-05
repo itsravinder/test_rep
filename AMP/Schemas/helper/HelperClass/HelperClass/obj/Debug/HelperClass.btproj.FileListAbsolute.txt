@@ -1,0 +1,5 @@
+C:\AMP\Schemas\helper\HelperClass\HelperClass\bin\Debug\HelperClass.dll
+C:\AMP\Schemas\helper\HelperClass\HelperClass\bin\Debug\HelperClass.pdb
+C:\AMP\Schemas\helper\HelperClass\HelperClass\bin\Debug\HelperClass_Biz.dll
+C:\AMP\Schemas\helper\HelperClass\HelperClass\obj\Debug\HelperClass.dll
+C:\AMP\Schemas\helper\HelperClass\HelperClass\obj\Debug\HelperClass.pdb

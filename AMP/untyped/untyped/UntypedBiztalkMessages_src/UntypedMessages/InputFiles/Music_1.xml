@@ -1,0 +1,7 @@
+<ns0:MusicMessage xmlns:ns0="http://UntypedMessages.Music">
+  <RegID>123213</RegID>
+  <Album>18 Till I Die</Album>
+  <Artist>Bryam Adams</Artist>
+  <Operation>SELL</Operation>
+  <ExpectedPrice>$9.99</ExpectedPrice>
+</ns0:MusicMessage>

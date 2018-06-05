@@ -1,0 +1,4 @@
+C:\AMP\Getorder_status\RRD.BT.Core.GetOrderStatus\RRD.BT.Core.GetOrderStatus\bin\Debug\RRD.BT.Core.GetOrderStatus.ExternalSchemas.dll
+C:\AMP\Getorder_status\RRD.BT.Core.GetOrderStatus\RRD.BT.Core.GetOrderStatus\bin\Debug\RRD.BT.Core.GetOrderStatus.ExternalSchemas.pdb
+C:\AMP\Getorder_status\RRD.BT.Core.GetOrderStatus\RRD.BT.Core.GetOrderStatus\obj\Debug\RRD.BT.Core.GetOrderStatus.ExternalSchemas.dll
+C:\AMP\Getorder_status\RRD.BT.Core.GetOrderStatus\RRD.BT.Core.GetOrderStatus\obj\Debug\RRD.BT.Core.GetOrderStatus.ExternalSchemas.pdb

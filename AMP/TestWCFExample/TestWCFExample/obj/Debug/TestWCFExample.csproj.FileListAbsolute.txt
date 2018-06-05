@@ -1,0 +1,6 @@
+C:\AMP\TestWCFExample\TestWCFExample\bin\TestWCFExample.dll.config
+C:\AMP\TestWCFExample\TestWCFExample\bin\TestWCFExample.dll
+C:\AMP\TestWCFExample\TestWCFExample\bin\TestWCFExample.pdb
+C:\AMP\TestWCFExample\TestWCFExample\obj\Debug\TestWCFExample.csprojResolveAssemblyReference.cache
+C:\AMP\TestWCFExample\TestWCFExample\obj\Debug\TestWCFExample.dll
+C:\AMP\TestWCFExample\TestWCFExample\obj\Debug\TestWCFExample.pdb

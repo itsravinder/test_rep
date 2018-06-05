@@ -1,0 +1,4 @@
+C:\AMP\WCF\duplicate_message\duplicate_message\bin\Debug\duplicate_message.dll
+C:\AMP\WCF\duplicate_message\duplicate_message\bin\Debug\duplicate_message.pdb
+C:\AMP\WCF\duplicate_message\duplicate_message\obj\Debug\duplicate_message.dll
+C:\AMP\WCF\duplicate_message\duplicate_message\obj\Debug\duplicate_message.pdb

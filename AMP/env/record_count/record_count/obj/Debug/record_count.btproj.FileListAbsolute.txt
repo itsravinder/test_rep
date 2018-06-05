@@ -1,0 +1,4 @@
+C:\AMP\env\record_count\record_count\bin\Debug\record_count.dll
+C:\AMP\env\record_count\record_count\bin\Debug\record_count.pdb
+C:\AMP\env\record_count\record_count\obj\Debug\record_count.dll
+C:\AMP\env\record_count\record_count\obj\Debug\record_count.pdb

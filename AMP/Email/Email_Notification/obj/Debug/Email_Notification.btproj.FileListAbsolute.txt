@@ -1,0 +1,4 @@
+C:\AMP\Email\Email_Notification\bin\Debug\Email_Notification.dll
+C:\AMP\Email\Email_Notification\bin\Debug\Email_Notification.pdb
+C:\AMP\Email\Email_Notification\obj\Debug\Email_Notification.dll
+C:\AMP\Email\Email_Notification\obj\Debug\Email_Notification.pdb

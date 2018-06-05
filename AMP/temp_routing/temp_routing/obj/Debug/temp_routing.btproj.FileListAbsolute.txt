@@ -1,0 +1,4 @@
+C:\AMP\temp_routing\temp_routing\bin\Debug\temp_routing.dll
+C:\AMP\temp_routing\temp_routing\bin\Debug\temp_routing.pdb
+C:\AMP\temp_routing\temp_routing\obj\Debug\temp_routing.dll
+C:\AMP\temp_routing\temp_routing\obj\Debug\temp_routing.pdb

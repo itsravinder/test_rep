@@ -1,0 +1,5 @@
+C:\AMP\WCF\WcfService2\BizTalk Server\bin\Debug\BizTalk Server.dll.config
+C:\AMP\WCF\WcfService2\BizTalk Server\bin\Debug\BizTalk Server.dll
+C:\AMP\WCF\WcfService2\BizTalk Server\bin\Debug\BizTalk Server.pdb
+C:\AMP\WCF\WcfService2\BizTalk Server\obj\Debug\BizTalk Server.dll
+C:\AMP\WCF\WcfService2\BizTalk Server\obj\Debug\BizTalk Server.pdb

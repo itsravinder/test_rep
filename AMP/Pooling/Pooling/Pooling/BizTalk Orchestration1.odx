@@ -1,0 +1,258 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="cd05c21e-542e-4e49-ba7b-c48eac62bc35" LowerBound="1.1" HigherBound="56.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Pooling" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="4a49dce4-b3bb-4ad9-8e55-6a2a18e19cff" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Wcf_port_Type" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="74bf01f0-1e53-46d2-826c-073b3b4df5dc" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="62c85458-4592-485f-9a36-96ae54c07028" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.67">
+                    <om:Property Name="Ref" Value="Pooling.InsertRecordProcedure_dbo.insertFeedProcessfileDetails" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="e0f4efb1-0e15-4e8e-818e-4b00e31da128" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Wcf_send_Type" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="b0ea3886-9ce8-4f73-9f4a-51eb89ba4293" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="6932ad34-b616-4d2d-a26f-01cab33d2916" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.67">
+                    <om:Property Name="Ref" Value="Pooling.InsertRecordProcedure_dbo.insertFeedProcessfileDetails" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="41fa8e7f-2216-4ec8-8622-f7ccbcddfc1b" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="15.69" HigherBound="15.123">
+                    <om:Property Name="Ref" Value="Pooling.InsertRecordProcedure_dbo.insertFeedProcessfileDetails" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="b3490a87-843e-48f6-81fa-56c00c625b9e" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="msg_in_Type" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="bf97e23b-c0d5-443c-bbae-3cfe2591e724" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="e7cf2ee2-17e5-488b-bc17-f48de54de0a1" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.20">
+                    <om:Property Name="Ref" Value="Pooling.Schema2" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="e3b4ba3f-bc49-4fbd-ab3e-74c1609cfedc" ParentLink="Module_ServiceDeclaration" LowerBound="25.1" HigherBound="55.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="BizTalk_Orchestration1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="ebc17b55-e433-4af1-b235-c6e2741b8489" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="34.1" HigherBound="35.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.DateTime" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="endtime" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="144d2f59-3bde-4bd5-8fdc-8bbe02715c42" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="32.1" HigherBound="33.1">
+                <om:Property Name="Type" Value="Pooling.InsertRecordProcedure_dbo.insertFeedProcessfileDetails" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="wcf_msg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="a5599d3c-267a-433a-9d7d-8a2d813398b3" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="33.1" HigherBound="34.1">
+                <om:Property Name="Type" Value="Pooling.Schema2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="in" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="79a26194-b263-4d1c-831a-a48e06d3cdb7" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="777ea160-7689-496a-a20f-7e9459767e54" ParentLink="ServiceBody_Statement" LowerBound="37.1" HigherBound="39.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="msg_in" />
+                    <om:Property Name="MessageName" Value="in" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="dfe6cb7e-7400-4d6c-a76f-da0d8825e20f" ParentLink="ServiceBody_Statement" LowerBound="39.1" HigherBound="45.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructMessage_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="Transform" OID="7b2eaa27-bce2-42ca-af4a-622b2a5dc1dc" ParentLink="ComplexStatement_Statement" LowerBound="42.1" HigherBound="44.1">
+                        <om:Property Name="ClassName" Value="Pooling.Transform_1" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transform_1" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="MessagePartRef" OID="62af6d2a-4768-4931-81e3-1e27ce568b25" ParentLink="Transform_InputMessagePartRef" LowerBound="43.60" HigherBound="43.62">
+                            <om:Property Name="MessageRef" Value="in" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="4c9d6456-bf99-4ee4-90e4-d6f8992cd977" ParentLink="Transform_OutputMessagePartRef" LowerBound="43.28" HigherBound="43.35">
+                            <om:Property Name="MessageRef" Value="wcf_msg" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="7806dcc5-bf49-4a8d-8531-ffeda618d033" ParentLink="Construct_MessageRef" LowerBound="40.23" HigherBound="40.30">
+                        <om:Property Name="Ref" Value="wcf_msg" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="80d10da9-de26-4258-acea-dd21f66294bd" ParentLink="ServiceBody_Statement" LowerBound="45.1" HigherBound="47.1">
+                    <om:Property Name="PortName" Value="Wcf_send" />
+                    <om:Property Name="MessageName" Value="wcf_msg" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Receive" OID="9dc13b40-4cf1-48ee-ab01-0f9849b92842" ParentLink="ServiceBody_Statement" LowerBound="47.1" HigherBound="49.1">
+                    <om:Property Name="Activate" Value="False" />
+                    <om:Property Name="PortName" Value="Wcf_send" />
+                    <om:Property Name="MessageName" Value="wcf_msg" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_2" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="4549f01f-1cf9-494b-a8f1-d5a51aea3ef9" ParentLink="ServiceBody_Statement" LowerBound="49.1" HigherBound="53.1">
+                    <om:Property Name="Expression" Value="endtime = System.DateTime.Now;&#xD;&#xA;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;inserting completed at&quot;, endtime.ToLongDateString());" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Expression_1" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="118eb338-1698-4a46-b01e-03cd31cc603c" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="28.1" HigherBound="30.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Pooling.Wcf_send_Type" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Wcf_send" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="073a0b8d-3ddd-4371-9da1-1576b33a25b8" ParentLink="PortDeclaration_CLRAttribute" LowerBound="28.1" HigherBound="29.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="846d90e6-9b75-43e5-9fb0-02a8c2d0341b" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="30.1" HigherBound="32.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Pooling.msg_in_Type" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msg_in" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="f661c29a-64a9-4baf-a5a3-9927d766005a" ParentLink="PortDeclaration_CLRAttribute" LowerBound="30.1" HigherBound="31.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Pooling
+{
+    internal porttype Wcf_port_Type
+    {
+        oneway Operation_1
+        {
+            InsertRecordProcedure_dbo.insertFeedProcessfileDetails
+        };
+    };
+    internal porttype Wcf_send_Type
+    {
+        requestresponse Operation_1
+        {
+            InsertRecordProcedure_dbo.insertFeedProcessfileDetails, InsertRecordProcedure_dbo.insertFeedProcessfileDetails
+        };
+    };
+    internal porttype msg_in_Type
+    {
+        oneway Operation_1
+        {
+            Schema2
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service BizTalk_Orchestration1
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses Wcf_send_Type Wcf_send;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements msg_in_Type msg_in;
+        message InsertRecordProcedure_dbo.insertFeedProcessfileDetails wcf_msg;
+        message Schema2 in;
+        System.DateTime endtime;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("777ea160-7689-496a-a20f-7e9459767e54")]
+            activate receive (msg_in.Operation_1, in);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("dfe6cb7e-7400-4d6c-a76f-da0d8825e20f")]
+            construct wcf_msg
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("7b2eaa27-bce2-42ca-af4a-622b2a5dc1dc")]
+                transform (wcf_msg) = Pooling.Transform_1 (in);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("80d10da9-de26-4258-acea-dd21f66294bd")]
+            send (Wcf_send.Operation_1, wcf_msg);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9dc13b40-4cf1-48ee-ab01-0f9849b92842")]
+            receive (Wcf_send.Operation_1, wcf_msg);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4549f01f-1cf9-494b-a8f1-d5a51aea3ef9")]
+            endtime = System.DateTime.Now;
+            
+            System.Diagnostics.EventLog.WriteEntry("inserting completed at", endtime.ToLongDateString());
+        }
+    }
+}
+

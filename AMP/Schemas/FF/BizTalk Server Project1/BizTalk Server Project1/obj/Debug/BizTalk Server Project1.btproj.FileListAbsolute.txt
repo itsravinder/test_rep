@@ -1,0 +1,4 @@
+C:\AMP\Schemas\FF\BizTalk Server Project1\BizTalk Server Project1\bin\Debug\Normal_FF.dll
+C:\AMP\Schemas\FF\BizTalk Server Project1\BizTalk Server Project1\bin\Debug\Normal_FF.pdb
+C:\AMP\Schemas\FF\BizTalk Server Project1\BizTalk Server Project1\obj\Debug\Normal_FF.dll
+C:\AMP\Schemas\FF\BizTalk Server Project1\BizTalk Server Project1\obj\Debug\Normal_FF.pdb

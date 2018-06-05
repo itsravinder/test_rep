@@ -1,0 +1,4 @@
+C:\AMP\WCF\Wcf_Add\biz_temop\bin\Debug\biz_temop.dll
+C:\AMP\WCF\Wcf_Add\biz_temop\bin\Debug\biz_temop.pdb
+C:\AMP\WCF\Wcf_Add\biz_temop\obj\Debug\biz_temop.dll
+C:\AMP\WCF\Wcf_Add\biz_temop\obj\Debug\biz_temop.pdb

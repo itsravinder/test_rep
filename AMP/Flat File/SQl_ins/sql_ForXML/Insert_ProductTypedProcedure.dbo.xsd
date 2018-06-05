@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">TypedProcedure.dbo</fileNameHint>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Insert_Product_x0020_">
+    <xs:annotation>
+      <xs:documentation>
+        <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">TypedProcedure/dbo/Insert_Product_x0020_</doc:action>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ID" nillable="true">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:maxLength value="10" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="ProductID" nillable="true">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:maxLength value="30" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Product_Name" nillable="true">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:maxLength value="20" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Qty" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Price" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="TotalPrice" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" maxOccurs="1" name="User_name" nillable="true">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:maxLength value="50" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Insert_Product_x0020_Response">
+    <xs:annotation>
+      <xs:documentation>
+        <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">TypedProcedure/dbo/Insert_Product_x0020_/response</doc:action>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" name="ReturnValue" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

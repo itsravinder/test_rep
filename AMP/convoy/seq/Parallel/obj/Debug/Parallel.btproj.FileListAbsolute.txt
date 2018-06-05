@@ -1,0 +1,4 @@
+C:\AMP\convoy\seq\Parallel\bin\Debug\Parallel.dll
+C:\AMP\convoy\seq\Parallel\bin\Debug\Parallel.pdb
+C:\AMP\convoy\seq\Parallel\obj\Debug\Parallel.dll
+C:\AMP\convoy\seq\Parallel\obj\Debug\Parallel.pdb

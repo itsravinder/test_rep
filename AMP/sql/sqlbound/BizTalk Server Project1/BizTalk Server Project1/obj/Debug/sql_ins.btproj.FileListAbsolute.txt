@@ -1,0 +1,4 @@
+C:\AMP\sql\sqlbound\BizTalk Server Project1\BizTalk Server Project1\bin\Debug\sql_ins.dll
+C:\AMP\sql\sqlbound\BizTalk Server Project1\BizTalk Server Project1\bin\Debug\sql_ins.pdb
+C:\AMP\sql\sqlbound\BizTalk Server Project1\BizTalk Server Project1\obj\Debug\sql_ins.dll
+C:\AMP\sql\sqlbound\BizTalk Server Project1\BizTalk Server Project1\obj\Debug\sql_ins.pdb

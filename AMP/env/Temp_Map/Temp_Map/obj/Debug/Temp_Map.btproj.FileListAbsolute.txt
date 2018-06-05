@@ -1,0 +1,4 @@
+C:\AMP\env\Temp_Map\Temp_Map\bin\Debug\Temp_Map.dll
+C:\AMP\env\Temp_Map\Temp_Map\bin\Debug\Temp_Map.pdb
+C:\AMP\env\Temp_Map\Temp_Map\obj\Debug\Temp_Map.dll
+C:\AMP\env\Temp_Map\Temp_Map\obj\Debug\Temp_Map.pdb

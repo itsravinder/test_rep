@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<schema xmlns:ns3="http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/MasterInsertUpdateDelete" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/MasterInsertUpdateDelete" version="1.0" xmlns="http://www.w3.org/2001/XMLSchema">
+  <annotation>
+    <appinfo>
+      <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">ProcedureResultSet.dbo.MasterInsertUpdateDelete</fileNameHint>
+    </appinfo>
+  </annotation>
+  <complexType name="StoredProcedureResultSet0">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="id" nillable="true" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="first_name" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="last_name" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="salary" nillable="true" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="city" nillable="true" type="string" />
+    </sequence>
+  </complexType>
+  <element name="StoredProcedureResultSet0" nillable="true" type="ns3:StoredProcedureResultSet0" />
+  <complexType name="ArrayOfStoredProcedureResultSet0">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="StoredProcedureResultSet0" type="ns3:StoredProcedureResultSet0" />
+    </sequence>
+  </complexType>
+  <element name="ArrayOfStoredProcedureResultSet0" nillable="true" type="ns3:ArrayOfStoredProcedureResultSet0" />
+</schema>

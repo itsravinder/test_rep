@@ -1,0 +1,6 @@
+C:\AMP\WCF\temp_wcf\temp_wxcf\bin\temp_wxcf.dll.config
+C:\AMP\WCF\temp_wcf\temp_wxcf\bin\temp_wxcf.dll
+C:\AMP\WCF\temp_wcf\temp_wxcf\bin\temp_wxcf.pdb
+C:\AMP\WCF\temp_wcf\temp_wxcf\obj\Debug\temp_wxcf.csprojResolveAssemblyReference.cache
+C:\AMP\WCF\temp_wcf\temp_wxcf\obj\Debug\temp_wxcf.dll
+C:\AMP\WCF\temp_wcf\temp_wxcf\obj\Debug\temp_wxcf.pdb

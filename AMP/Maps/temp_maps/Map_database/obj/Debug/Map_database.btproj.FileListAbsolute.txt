@@ -1,0 +1,4 @@
+C:\AMP\Maps\temp_maps\Map_database\bin\Debug\Map_database.dll
+C:\AMP\Maps\temp_maps\Map_database\bin\Debug\Map_database.pdb
+C:\AMP\Maps\temp_maps\Map_database\obj\Debug\Map_database.dll
+C:\AMP\Maps\temp_maps\Map_database\obj\Debug\Map_database.pdb

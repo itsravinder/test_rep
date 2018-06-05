@@ -1,0 +1,4 @@
+C:\AMP\Flat File\SQl_ins\sql_ForXML\bin\Debug\sql_ForXML.dll
+C:\AMP\Flat File\SQl_ins\sql_ForXML\bin\Debug\sql_ForXML.pdb
+C:\AMP\Flat File\SQl_ins\sql_ForXML\obj\Debug\sql_ForXML.dll
+C:\AMP\Flat File\SQl_ins\sql_ForXML\obj\Debug\sql_ForXML.pdb

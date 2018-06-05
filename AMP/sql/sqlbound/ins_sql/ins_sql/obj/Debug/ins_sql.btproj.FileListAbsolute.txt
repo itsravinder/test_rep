@@ -1,0 +1,4 @@
+C:\AMP\sql\sqlbound\ins_sql\ins_sql\bin\Debug\ins_sql.dll
+C:\AMP\sql\sqlbound\ins_sql\ins_sql\bin\Debug\ins_sql.pdb
+C:\AMP\sql\sqlbound\ins_sql\ins_sql\obj\Debug\ins_sql.dll
+C:\AMP\sql\sqlbound\ins_sql\ins_sql\obj\Debug\ins_sql.pdb

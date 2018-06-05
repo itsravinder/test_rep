@@ -1,0 +1,4 @@
+C:\AMP\env\Envenlope\Envenlope\bin\Debug\Envenlope.dll
+C:\AMP\env\Envenlope\Envenlope\bin\Debug\Envenlope.pdb
+C:\AMP\env\Envenlope\Envenlope\obj\Debug\Envenlope.dll
+C:\AMP\env\Envenlope\Envenlope\obj\Debug\Envenlope.pdb

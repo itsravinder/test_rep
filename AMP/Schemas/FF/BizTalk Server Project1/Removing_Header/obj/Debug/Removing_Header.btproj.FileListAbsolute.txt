@@ -1,0 +1,4 @@
+C:\AMP\Schemas\FF\BizTalk Server Project1\Removing_Header\bin\Debug\Removing_Header.dll
+C:\AMP\Schemas\FF\BizTalk Server Project1\Removing_Header\bin\Debug\Removing_Header.pdb
+C:\AMP\Schemas\FF\BizTalk Server Project1\Removing_Header\obj\Debug\Removing_Header.dll
+C:\AMP\Schemas\FF\BizTalk Server Project1\Removing_Header\obj\Debug\Removing_Header.pdb

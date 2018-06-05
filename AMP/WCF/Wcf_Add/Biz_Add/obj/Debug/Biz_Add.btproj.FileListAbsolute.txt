@@ -1,0 +1,5 @@
+C:\AMP\WCF\Wcf_Add\Biz_Add\bin\Debug\Biz_Add.dll.config
+C:\AMP\WCF\Wcf_Add\Biz_Add\bin\Debug\Biz_Add.dll
+C:\AMP\WCF\Wcf_Add\Biz_Add\bin\Debug\Biz_Add.pdb
+C:\AMP\WCF\Wcf_Add\Biz_Add\obj\Debug\Biz_Add.dll
+C:\AMP\WCF\Wcf_Add\Biz_Add\obj\Debug\Biz_Add.pdb

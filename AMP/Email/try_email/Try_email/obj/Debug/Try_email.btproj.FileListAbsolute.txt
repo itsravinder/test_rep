@@ -1,0 +1,4 @@
+C:\AMP\Email\try_email\Try_email\bin\Debug\Try_email.dll
+C:\AMP\Email\try_email\Try_email\bin\Debug\Try_email.pdb
+C:\AMP\Email\try_email\Try_email\obj\Debug\Try_email.dll
+C:\AMP\Email\try_email\Try_email\obj\Debug\Try_email.pdb

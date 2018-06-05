@@ -1,0 +1,4 @@
+C:\AMP\Pooling\Pooling\Pooling\bin\Debug\Pooling.dll
+C:\AMP\Pooling\Pooling\Pooling\bin\Debug\Pooling.pdb
+C:\AMP\Pooling\Pooling\Pooling\obj\Debug\Pooling.dll
+C:\AMP\Pooling\Pooling\Pooling\obj\Debug\Pooling.pdb

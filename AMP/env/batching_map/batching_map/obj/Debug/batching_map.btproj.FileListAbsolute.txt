@@ -1,0 +1,4 @@
+C:\AMP\env\batching_map\batching_map\bin\Debug\batching_map.dll
+C:\AMP\env\batching_map\batching_map\bin\Debug\batching_map.pdb
+C:\AMP\env\batching_map\batching_map\obj\Debug\batching_map.dll
+C:\AMP\env\batching_map\batching_map\obj\Debug\batching_map.pdb

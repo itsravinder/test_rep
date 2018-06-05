@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://Rest_Country.Country_resp" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RestResponse">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="messages" type="xs:string" />
+              <xs:element minOccurs="0" name="result">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="name" type="xs:string" />
+                    <xs:element minOccurs="0" name="alpha2_code" type="xs:string" />
+                    <xs:element minOccurs="0" name="alpha3_code" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

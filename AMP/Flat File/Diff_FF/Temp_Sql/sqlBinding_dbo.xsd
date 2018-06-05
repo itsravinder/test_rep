@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<schema xmlns:ns3="http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/MasterInsertUpdateDelete" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo" version="1.0" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation=".\sqlBinding_MasterInsertUpdateDelete.xsd" namespace="http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/MasterInsertUpdateDelete" />
+  <annotation>
+    <appinfo>
+      <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">TypedProcedure.dbo</fileNameHint>
+    </appinfo>
+  </annotation>
+  <element name="MasterInsertUpdateDelete">
+    <annotation>
+      <documentation>
+        <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">TypedProcedure/dbo/MasterInsertUpdateDelete</doc:action>
+      </documentation>
+    </annotation>
+    <complexType>
+      <sequence>
+        <element minOccurs="0" maxOccurs="1" name="id" nillable="true" type="int" />
+        <element minOccurs="0" maxOccurs="1" name="first_name" nillable="true">
+          <simpleType>
+            <restriction base="string">
+              <maxLength value="10" />
+            </restriction>
+          </simpleType>
+        </element>
+        <element minOccurs="0" maxOccurs="1" name="last_name" nillable="true">
+          <simpleType>
+            <restriction base="string">
+              <maxLength value="10" />
+            </restriction>
+          </simpleType>
+        </element>
+        <element minOccurs="0" maxOccurs="1" name="salary" nillable="true">
+          <simpleType>
+            <restriction base="decimal">
+              <totalDigits value="10" />
+              <fractionDigits value="2" />
+            </restriction>
+          </simpleType>
+        </element>
+        <element minOccurs="0" maxOccurs="1" name="city" nillable="true">
+          <simpleType>
+            <restriction base="string">
+              <maxLength value="20" />
+            </restriction>
+          </simpleType>
+        </element>
+        <element minOccurs="0" maxOccurs="1" name="StatementType" nillable="true">
+          <simpleType>
+            <restriction base="string">
+              <maxLength value="20" />
+            </restriction>
+          </simpleType>
+        </element>
+      </sequence>
+    </complexType>
+  </element>
+  <element name="MasterInsertUpdateDeleteResponse">
+    <annotation>
+      <documentation>
+        <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">TypedProcedure/dbo/MasterInsertUpdateDelete/response</doc:action>
+      </documentation>
+    </annotation>
+    <complexType>
+      <sequence>
+        <element minOccurs="0" maxOccurs="1" name="StoredProcedureResultSet0" nillable="true" type="ns3:ArrayOfStoredProcedureResultSet0" />
+        <element minOccurs="1" maxOccurs="1" name="ReturnValue" type="int" />
+      </sequence>
+    </complexType>
+  </element>
+</schema>

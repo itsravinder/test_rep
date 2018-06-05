@@ -1,0 +1,7 @@
+<ns0:CarMessage xmlns:ns0="http://UntypedMessages.Car">
+  <RegID>342434</RegID>
+  <Make>Cadillac</Make>
+  <Model>2005</Model>
+  <Operation>BUY</Operation>
+  <ExpectedPrice>$30,000</ExpectedPrice>
+</ns0:CarMessage>

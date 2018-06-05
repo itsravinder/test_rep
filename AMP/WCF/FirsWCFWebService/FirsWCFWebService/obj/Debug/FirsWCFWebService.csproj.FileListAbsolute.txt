@@ -1,0 +1,6 @@
+C:\AMP\WCF\FirsWCFWebService\FirsWCFWebService\bin\FirsWCFWebService.dll.config
+C:\AMP\WCF\FirsWCFWebService\FirsWCFWebService\bin\FirsWCFWebService.dll
+C:\AMP\WCF\FirsWCFWebService\FirsWCFWebService\bin\FirsWCFWebService.pdb
+C:\AMP\WCF\FirsWCFWebService\FirsWCFWebService\obj\Debug\FirsWCFWebService.csprojResolveAssemblyReference.cache
+C:\AMP\WCF\FirsWCFWebService\FirsWCFWebService\obj\Debug\FirsWCFWebService.dll
+C:\AMP\WCF\FirsWCFWebService\FirsWCFWebService\obj\Debug\FirsWCFWebService.pdb

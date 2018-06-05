@@ -1,0 +1,4 @@
+C:\AMP\C#\Rest\Rest_Country\Rest_Country\bin\Debug\Rest_Country.dll
+C:\AMP\C#\Rest\Rest_Country\Rest_Country\bin\Debug\Rest_Country.pdb
+C:\AMP\C#\Rest\Rest_Country\Rest_Country\obj\Debug\Rest_Country.dll
+C:\AMP\C#\Rest\Rest_Country\Rest_Country\obj\Debug\Rest_Country.pdb

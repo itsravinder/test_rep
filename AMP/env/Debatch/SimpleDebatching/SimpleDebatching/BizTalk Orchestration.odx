@@ -1,0 +1,108 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="a8c124c7-aba5-4398-9f3c-31b59db1056e">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="SimpleDebatching" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="4355f5d7-b4c8-4c05-ad7e-99be226acbe7" ParentLink="Module_PortType">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata port type: " />
+            <om:Property Name="Name" Value="Procedures_dbo" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="c6a42c5c-3ddf-4735-b7ac-b2c9959fc32e" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata operation: " />
+                <om:Property Name="Name" Value="POLL_EMPLOYEE" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="fa1ccb8c-2e03-4127-8226-d5d3543f2890" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="SimpleDebatching.Procedures_dbo_POLL_EMPLOYEE_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="b4b83d9f-03d4-4694-9962-04384346c25d" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="SimpleDebatching.Procedures_dbo_POLL_EMPLOYEE_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="72982f9f-3503-4cc8-aefa-93301109b6fe" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="Procedures_dbo_POLL_EMPLOYEE_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="cf09fa41-5a57-4f76-8512-81a6acb55bdb" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="SimpleDebatching.sqlBinding_dbo.POLL_EMPLOYEE" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="718046f4-e674-4b97-8ede-fee830590229" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="Procedures_dbo_POLL_EMPLOYEE_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="2b86d45d-4234-4bc2-b6fd-489c75441a28" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="SimpleDebatching.sqlBinding_dbo.POLL_EMPLOYEEResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="81e1a954-c9b1-4a93-bbd2-5257905c30f7" ParentLink="Module_ServiceDeclaration">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Orchestration_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="493d2bf0-0d94-486c-8ef9-2e7b6280f086" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module SimpleDebatching
+{
+    internal messagetype Procedures_dbo_POLL_EMPLOYEE_InputMessage
+    {
+        body sqlBinding_dbo.POLL_EMPLOYEE parameters;
+    };
+    internal messagetype Procedures_dbo_POLL_EMPLOYEE_OutputMessage
+    {
+        body sqlBinding_dbo.POLL_EMPLOYEEResponse parameters;
+    };
+    internal porttype Procedures_dbo
+    {
+        requestresponse POLL_EMPLOYEE
+        {
+            Procedures_dbo_POLL_EMPLOYEE_InputMessage, Procedures_dbo_POLL_EMPLOYEE_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service Orchestration_1
+    {
+        body ()
+        {
+        }
+    }
+}
+

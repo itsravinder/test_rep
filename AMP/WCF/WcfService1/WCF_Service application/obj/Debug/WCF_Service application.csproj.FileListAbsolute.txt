@@ -1,0 +1,6 @@
+C:\AMP\WCF\WcfService1\WCF_Service application\bin\WCF_Service application.dll.config
+C:\AMP\WCF\WcfService1\WCF_Service application\bin\WCF_Service application.dll
+C:\AMP\WCF\WcfService1\WCF_Service application\bin\WCF_Service application.pdb
+C:\AMP\WCF\WcfService1\WCF_Service application\obj\Debug\WCF_Service application.csprojResolveAssemblyReference.cache
+C:\AMP\WCF\WcfService1\WCF_Service application\obj\Debug\WCF_Service application.dll
+C:\AMP\WCF\WcfService1\WCF_Service application\obj\Debug\WCF_Service application.pdb

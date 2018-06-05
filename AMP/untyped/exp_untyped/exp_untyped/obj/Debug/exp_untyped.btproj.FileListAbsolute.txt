@@ -1,0 +1,6 @@
+C:\AMP\untyped\exp_untyped\exp_untyped\bin\Debug\exp_untyped.dll
+C:\AMP\untyped\exp_untyped\exp_untyped\bin\Debug\exp_untyped.pdb
+C:\AMP\untyped\exp_untyped\exp_untyped\obj\Debug\exp_untyped.Properties.Resources.resources
+C:\AMP\untyped\exp_untyped\exp_untyped\obj\Debug\exp_untyped.btproj.GenerateResource.Cache
+C:\AMP\untyped\exp_untyped\exp_untyped\obj\Debug\exp_untyped.dll
+C:\AMP\untyped\exp_untyped\exp_untyped\obj\Debug\exp_untyped.pdb

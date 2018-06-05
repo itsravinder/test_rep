@@ -1,0 +1,4 @@
+C:\AMP\SMTP_Test\SMTP_Test\bin\Debug\SMTP_Test.dll
+C:\AMP\SMTP_Test\SMTP_Test\bin\Debug\SMTP_Test.pdb
+C:\AMP\SMTP_Test\SMTP_Test\obj\Debug\SMTP_Test.dll
+C:\AMP\SMTP_Test\SMTP_Test\obj\Debug\SMTP_Test.pdb

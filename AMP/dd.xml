@@ -1,0 +1,13 @@
+- <ns0:Domestic_Supplymentary xmlns:ns0="http://TSSG.Streamline.ESB.Ameriprise.Admin.Dom.ReProcess.Admin_Domestic">
+- <Domestic_Supplymentary_Recordl>
+  <Item_number>S-20233-3</Item_number> 
+  <Fname>THOMAS</Fname> 
+  <Lname> OTTESEN</Lname> 
+  <Address1> 721</Address1> 
+  <Address2>HAMM ST</Address2> 
+  <Address3>NW</Address3> 
+  <City>PALM BAY</City> 
+  <State>FL</State> 
+  <PinCode>32907-8211</PinCode> 
+  </Domestic_Supplymentary_Recordl>
+  </ns0:Domestic_Supplymentary>

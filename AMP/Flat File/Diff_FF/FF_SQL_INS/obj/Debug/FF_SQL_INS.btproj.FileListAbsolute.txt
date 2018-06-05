@@ -1,0 +1,4 @@
+C:\AMP\Flat File\Diff_FF\FF_SQL_INS\bin\Debug\FF_SQL_INS.dll
+C:\AMP\Flat File\Diff_FF\FF_SQL_INS\bin\Debug\FF_SQL_INS.pdb
+C:\AMP\Flat File\Diff_FF\FF_SQL_INS\obj\Debug\FF_SQL_INS.dll
+C:\AMP\Flat File\Diff_FF\FF_SQL_INS\obj\Debug\FF_SQL_INS.pdb

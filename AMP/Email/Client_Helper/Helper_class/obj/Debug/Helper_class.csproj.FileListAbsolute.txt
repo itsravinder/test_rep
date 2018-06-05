@@ -1,0 +1,5 @@
+C:\AMP\Email\Client_Helper\Helper_class\bin\Debug\Helper_class.dll
+C:\AMP\Email\Client_Helper\Helper_class\bin\Debug\Helper_class.pdb
+C:\AMP\Email\Client_Helper\Helper_class\obj\Debug\Helper_class.csprojResolveAssemblyReference.cache
+C:\AMP\Email\Client_Helper\Helper_class\obj\Debug\Helper_class.dll
+C:\AMP\Email\Client_Helper\Helper_class\obj\Debug\Helper_class.pdb

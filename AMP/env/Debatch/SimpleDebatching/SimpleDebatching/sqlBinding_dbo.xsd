@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<schema xmlns:ns3="http://schemas.datacontract.org/2004/07/System.Data" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/Sql/2008/05/Procedures/dbo" version="1.0" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation=".\sqlBinding_System_x2eData.xsd" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+  <annotation>
+    <appinfo>
+      <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">Procedure.dbo</fileNameHint>
+    </appinfo>
+  </annotation>
+  <element name="POLL_EMPLOYEE">
+    <annotation>
+      <documentation>
+        <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">Procedure/dbo/POLL_EMPLOYEE</doc:action>
+      </documentation>
+    </annotation>
+    <complexType>
+      <sequence />
+    </complexType>
+  </element>
+  <element name="POLL_EMPLOYEEResponse">
+    <annotation>
+      <documentation>
+        <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">Procedure/dbo/POLL_EMPLOYEE/response</doc:action>
+      </documentation>
+    </annotation>
+    <complexType>
+      <sequence>
+        <element minOccurs="0" maxOccurs="1" name="POLL_EMPLOYEEResult" nillable="true" type="ns3:ArrayOfDataSet" />
+        <element minOccurs="1" maxOccurs="1" name="ReturnValue" type="int" />
+      </sequence>
+    </complexType>
+  </element>
+</schema>

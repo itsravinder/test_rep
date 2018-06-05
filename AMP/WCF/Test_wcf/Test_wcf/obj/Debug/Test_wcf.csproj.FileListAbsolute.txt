@@ -1,0 +1,5 @@
+C:\AMP\WCF\Test_wcf\Test_wcf\bin\Test_wcf.dll.config
+C:\AMP\WCF\Test_wcf\Test_wcf\bin\Test_wcf.dll
+C:\AMP\WCF\Test_wcf\Test_wcf\bin\Test_wcf.pdb
+C:\AMP\WCF\Test_wcf\Test_wcf\obj\Debug\Test_wcf.dll
+C:\AMP\WCF\Test_wcf\Test_wcf\obj\Debug\Test_wcf.pdb

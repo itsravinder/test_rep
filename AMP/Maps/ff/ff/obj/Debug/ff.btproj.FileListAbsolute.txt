@@ -1,0 +1,4 @@
+C:\AMP\Maps\ff\ff\bin\Debug\ff.dll
+C:\AMP\Maps\ff\ff\bin\Debug\ff.pdb
+C:\AMP\Maps\ff\ff\obj\Debug\ff.dll
+C:\AMP\Maps\ff\ff\obj\Debug\ff.pdb

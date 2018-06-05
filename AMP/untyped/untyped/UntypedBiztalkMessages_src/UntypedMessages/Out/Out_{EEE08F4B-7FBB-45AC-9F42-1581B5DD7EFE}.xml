@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ns0:StoreFront xmlns:ns0="http://UntypedMessages.StoreFront">
+  <RegID>0120120</RegID>
+  <Category>BOOK</Category>
+  <ExpectedPrice>$299.99</ExpectedPrice>
+  <DataItem1>Bill Gates</DataItem1>
+  <DataItem2>2344</DataItem2>
+  <Operation>SELL</Operation>
+</ns0:StoreFront>
